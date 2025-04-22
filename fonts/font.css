@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "HelveticaNeueLT";
+    src: url("HelveticaNeue-Rg.woff2") format("woff2"),
+         url("HelveticaNeue-Rg.woff") format("woff"),
+         url("HelveticaNeue-Rg.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeueLT";
+    src: url("HelveticaNeue-Bd.woff2") format("woff2"),
+         url("HelveticaNeue-Bd.woff") format("woff"),
+         url("HelveticaNeue-Bd.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
