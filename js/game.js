@@ -7421,7 +7421,7 @@ $(function () {
     appInstance = _0x4f9dac();
     appInstance.v();
     if (PhoneChecked()) {
-      loadScript("https://www.baddawi.com/FDZ/js/custom-game.js", "mobileconfig", function () {
+      loadScript("https://wormateserkanconnect.github.io/DV/js/custom-game.js", "mobileconfig", function () {
         setupJoyConfig();
       });
     }
