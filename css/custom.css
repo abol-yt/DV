@@ -1,0 +1,28 @@
+.loading-background {
+	background-size: cover;
+	background: url('https://i.imgur.com/OLzfmSU.jpeg') no-repeat center center;
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+#game-wrap {
+	background-color: #d5d2db;
+	background-image: url(https://i.imgur.com/YMWqrYn.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	min-height: 320px;
+	min-width: 320px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
