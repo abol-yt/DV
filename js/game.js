@@ -7887,7 +7887,7 @@ $("#mm-store").after(`
     <div style="margin: 0;" id="loa831pibur0w4gv">
         <div class="label" id="titleSetings">Notification</div>
         <div class="FDZ-Team">
-            <img src="https://i.imgur.com/rkY9ODQ.png" alt="FDZ" />
+            <img src="https://i.imgur.com/547I7NL.png" alt="FDZ" />
             <!-- Button to redirect to Discord -->
             <button id="buy-premium">
                 Discord
