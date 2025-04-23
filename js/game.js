@@ -7631,7 +7631,7 @@ $(".mm-merchant-cont").html(`
     $(".description-text").replaceWith(`
 <div class="description-text">
     <div class="Dziri-Gaming-Connect">
-        <img src="https://i.imgur.com/rkY9ODQ.png" width="20" align="center" alt=""> WormDV Connect
+        <img src="https://i.imgur.com/547I7NL.png" width="20" align="center" alt=""> WormDV Connect
     </div>
     <div class="description-text-hiep">
 
