@@ -2427,7 +2427,7 @@ switch (languageKey) {
             audioElement.play();
           }
           
-          var newParticleEffect = createParticleEffect(localizeMessage("index.game.floating.headshot")+ "🦊", true);
+          var newParticleEffect = createParticleEffect(localizeMessage("index.game.floating.headshot")+ "☠️", true);
           this.addChild(newParticleEffect);
           this.Pe.push(newParticleEffect);
           if (newParticleEffect) {
