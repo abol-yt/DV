@@ -3,23 +3,23 @@
     "Users": [
         {
             "id": 1,
-            "cliente_NOMBRE": "adam",
+            "cliente_NOMBRE": "Platen",
             "cliente_ID": "gg_106263452150533879793",
             "Client_KeyAccecs": "XTPRIVATESKIN",
             "cliente_DateStarted": "04-02-2025",
             "cliente_DateExpired": "04-06-2029",
             "status": 1,
-            "Client_VisibleSkin": "1344"
+            "Client_VisibleSkin": "0000"
         },
         {
             "id": 2,
-            "cliente_NOMBRE": "Fathi",
-            "cliente_ID": "gg_112882243252906236178",
+            "cliente_NOMBRE": "Davinci",
+            "cliente_ID": "gg_106712396248121353987",
             "Client_KeyAccecs": "XTPRIVATESKIN",
             "cliente_DateStarted": "04-02-2025",
             "cliente_DateExpired": "04-06-2030",
             "status": 1,
-            "Client_VisibleSkin": "1121"
+            "Client_VisibleSkin": "0000"
         },
         {
             "id": 3,
