@@ -2370,7 +2370,7 @@ switch (languageKey) {
         var scaleValue = Math.min(1.5, 0.5 + arg1 / 600);
         var colorValue = undefined;
         if (arg1 < 1) {
-          colorValue = "0xFFFFFF";
+          colorValue = "0xff9900";
         } else if (arg1 < 30) {
           var ratio = (arg1 - 1) / 29;
           colorValue = colorConversion((1 - ratio) * 1 + ratio * 0.96, (1 - ratio) * 1 + ratio * 0.82, (1 - ratio) * 1 + ratio * 0);
@@ -7591,10 +7591,10 @@ $(function () {
 $(".mm-merchant-cont").html(`
     <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px">
         <a href="https://www.tiktok.com/@dzirigaming2" target="_blank" style="margin-right: 10px;">
-            <img class="merchant-logo" src="https://www.baddawi.com/FDZ/images/FDZ-logo.png" alt="FDZ" width="155">
+            <img class="merchant-logo" src="https://i.imgur.com/5cCaxAT.png" alt="FDZ" width="155">
         </a>
         <a href="https://www.tiktok.com/@dzirigaming1" target="_blank">
-            <img class="merchant-logo" src="https://www.baddawi.com/FDZ/images/FDZ-logo.png" alt="FDZ" width="155">
+            <img class="merchant-logo" src="https://i.imgur.com/5cCaxAT.png" alt="FDZ" width="155">
         </a>
     </div>
 `);
@@ -7631,7 +7631,7 @@ $(".mm-merchant-cont").html(`
     $(".description-text").replaceWith(`
 <div class="description-text">
     <div class="Dziri-Gaming-Connect">
-        <img src="https://i.imgur.com/aSBRjrv.png" width="20" align="center" alt=""> Dziri Gaming Connect
+        <img src="https://i.imgur.com/rkY9ODQ.png" width="20" align="center" alt=""> WormDV Connect
     </div>
     <div class="description-text-hiep">
 
