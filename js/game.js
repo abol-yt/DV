@@ -7846,7 +7846,7 @@ $("#mm-store").after(`
             </div>
 <div class="settings-lineZoom">
     <span class="settings-labelZoom">تصنيع السكنات  :</span>
-    <a href="https://www.baddawi.com/FDZ/SKIN/" target="_blank">
+    <a href="https://skinlab.haylamday.com/" target="_blank">
         <i class="fa-solid fa-link red-icon"></i>
     </a>
 </div>
