@@ -4229,9 +4229,17 @@ button {
     border-radius: 5px;
     border: 1px solid #f1f1e7;
     color: #fff;
-    font-family: HelveticaNeueLT;
+    /* font-family: HelveticaNeueLT; */
     font-size: 17px;
     font-weight: 400;
+    font-family: 'HelveticaNeueLT', sans-serif;
+}
+
+button#buy-premium {
+    background: #030b11;
+    color: #bf8031;
+    border-radius: 38px;
+    font-size: 19px;
 }
 
 button:hover {
@@ -4338,7 +4346,7 @@ button:hover {
     border-radius: 5px;
     border: #3e9f1d 1px solid;
     color: #000000;
-    font-family: HelveticaNeueLT;
+    font-family: font-family: 'HelveticaNeueLT', sans-serif;
     font-size: 16px;
     font-weight: 700;
     height: 35px;
@@ -4600,7 +4608,7 @@ i.fa.fa-solid.fa-signal {
 }
 
 .text-FDZ:hover {
-    color: #ff6600;
+    color: #bf8031;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
 }
@@ -4632,11 +4640,14 @@ i.fa.fa-solid.fa-signal {
 }
 
 .settings-button {
-    background: #ff7116;
+    background: #030b11;
+    color: #bf8031;
     font-weight: 700;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
 }
+
+c {}
 
 .settings-button:hover {
     background: #e66a14;
@@ -4816,18 +4827,18 @@ button#buy-premium {
     margin-right: 50px;
     margin-top: 20px;
     padding: 0 15px;
-    width: calc(100% - 100px);
+    width: calc(77% - 100px);
 }
 
 .Dziri-Gaming-Connect {
-    color: black;
+    color: #bf8031;
     position: absolute;
-    top: -3px;
-    width: 92%;
+    top: 0px;
+    width: 96%;
     z-index: 1;
-	font-weight: 700;
-    background: #f7941d;
-    border-radius: 10px;
+    font-weight: bold;
+    background: #030b11;
+    border-radius: 18px;
 }
 
 .settings-header {
