@@ -8669,3 +8669,22 @@ isValidHotkey = function (event) {
   }
 };
 console.log("FDZ - Version 1.0.5 Released in 2025");
+           /*zoom by yildo.com*/  
+// "z" tuÅŸuna basÄ±ldÄ±ÄŸÄ±nda zoom iÅŸlemini durdurma fonksiyonu
+
+function stopZoom(event) {
+
+if (event.key === 'z') {
+
+    window.multiplier = 1.00; // BaÅŸlangÄ±Ã§ zoom seviyesine geri dÃ¶n
+
+    window.changedNf();
+
+}
+}
+
+// TuÅŸ olayÄ±nÄ± dinleyiciye baÄŸlama
+
+window.addEventListener('keydown', stopZoom);
+
+           /*zoom by yildo.com*/  
