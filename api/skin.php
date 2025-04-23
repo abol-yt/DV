@@ -11086,15 +11086,15 @@
         "kurdistan75_27_0"
       ],
       "glow": [
-        "a_grass",
-        "a_grass",
-        "a_grass",
-        "a_grass",
-        "a_grass",
-        "a_grass",
-        "a_grass",
-        "a_grass",
-        "a_grass"
+        "a_azure",
+        "a_azure",
+        "a_azure",
+        "a_azure",
+        "a_azure",
+        "a_azure",
+        "a_azure",
+        "a_azure",
+        "a_azure"
       ]
     },
     {
@@ -11836,15 +11836,15 @@
         "ninawa_01_0"
       ],
       "glow": [
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw"
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white"
       ]
     },
     {
@@ -18908,7 +18908,7 @@
     },
     "kurdistan75_27": {
       "custom": true,
-      "relativePath": "https://www.baddawi.com/FDZ/images/texture/FDZ/Fathy_02.png"
+      "relativePath": "https://i.imgur.com/rU4j50f.png"
     },
     "kurdistan75_28": {
       "custom": true,
@@ -19008,7 +19008,7 @@
     },
     "ninawa_01": {
       "custom": true,
-      "relativePath": "https://www.baddawi.com/FDZ/images/texture/FDZ/Fathy_01.png"
+      "relativePath": "https://i.imgur.com/BnQr1nQ.png"
     },
     "ninawa_03": {
       "custom": true,
