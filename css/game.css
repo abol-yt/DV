@@ -486,6 +486,8 @@ body {
     font-size: 12px;
 }
 
+img {}
+
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-left .description-text h1,
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-left .description-text h2,
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-left .description-text ul,
@@ -4831,13 +4833,13 @@ button#buy-premium {
 }
 
 .Dziri-Gaming-Connect {
-    color: #bf8031;
+    color: #030b11;
     position: absolute;
     top: 0px;
     width: 96%;
     z-index: 1;
     font-weight: bold;
-    background: #030b11;
+    background: #bf8031;
     border-radius: 18px;
 }
 
