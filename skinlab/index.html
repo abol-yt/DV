@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html ng-app="wormfriendsApp">
+<head>
+<title>SKINLAB</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="description" content="VuongHiep.Com" />
+<meta name="keywords" content="skinlab, wormate.io, wormate, io, worm, worms, snake, snakes, game, online, games, web, html5, fun, mmo" />
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+<link rel="icon" href="./images/favicon.png" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="/skinlab/css/cropper.css" />
+<link rel="stylesheet" href="/skinlab/css/main.css" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PLRER72K8V"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-PLRER72K8V');
+  </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7201091343317981" crossorigin="anonymous"></script>
+
+<style>
+    .wormworld-menu {}
+
+    .wormworld-menu>a {
+      color: #f00;
+      text-decoration: none;
+      min-width: 75px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+    <div id="toan-trang">
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+<div class="container">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link " href="/">
+Home
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="/https://api.whatsapp.com/send?phone=84924623650&amp;text=Xin%20ch%C3%A0o!%20M%C3%ACnh%20%C4%91ang%20d%C3%B9ng%20Whatsapp">
+Active
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="https://chromewebstore.google.com/detail/wormate-friends-connect/jngfpfphmgemflifihcpdibcfajibojh">
+Install
+</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Design
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+<li><a class="dropdown-item" href="/skinlab/index.html">SKINLAB</a></li>
+<li><a class="dropdown-item" href="/skinlab/index.html">WEARLAB</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div class="container" ng-controller="skinlabCtrl">
+<div class="row">
+<hr>
+<div class="col-md-12">
+<br>
+<h4>FILE INFO</h4>
+<ul>
+<li>
+Format: png | Size: 1920 x 660 pixel
+</li>
+</ul>
+</div>
+<div class="col-md-10">
+<div class="docs-demo" style="border: 4px solid #fd0dab; padding: 20px">
+<div class="img-container">
+<img src="https://i.imgur.com/HB2ytNv.png" alt="Picture" />
+</div>
+</div>
+<div class="row" id="actions">
+<div class="col-md-12 docs-buttons">
+<div class="btn-group">
+<button type="button" class="btn btn-primary" data-method="zoom" data-option="0.1" title="Zoom In">
+<span class="docs-tooltip" data-toggle="tooltip" title>
+<span class="fa fa-search-plus"></span>
+</span>
+</button>
+<button type="button" class="btn btn-primary" data-method="zoom" data-option="-0.1" title="Zoom Out">
+<span class="docs-tooltip" data-toggle="tooltip" title>
+<span class="fa fa-search-minus"></span>
+</span>
+</button>
+</div>
+<div class="btn-group">
+<button type="button" class="btn btn-primary" data-method="move" data-option="-10" data-second-option="0" title="Move Left">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-arrow-left"></span>
+</span>
+</button>
+<button type="button" class="btn btn-primary" data-method="move" data-option="10" data-second-option="0" title="Move Right">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-arrow-right"></span>
+</span>
+</button>
+<button type="button" class="btn btn-primary" data-method="move" data-option="0" data-second-option="-10" title="Move Up">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-arrow-up"></span>
+</span>
+</button>
+<button type="button" class="btn btn-primary" data-method="move" data-option="0" data-second-option="10" title="Move Down">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-arrow-down"></span>
+</span>
+</button>
+</div>
+<div class="btn-group">
+<button type="button" class="btn btn-primary" data-method="rotate" data-option="-45" title="Rotate Left">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-undo-alt"></span>
+</span>
+</button>
+<button type="button" class="btn btn-primary" data-method="rotate" data-option="45" title="Rotate Right">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-redo-alt"></span>
+</span>
+</button>
+</div>
+<div class="btn-group">
+<button type="button" class="btn btn-primary" data-method="scaleX" data-option="-1" title="Flip Horizontal">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-arrows-alt-h"></span>
+</span>
+</button>
+<button type="button" class="btn btn-primary" data-method="scaleY" data-option="-1" title="Flip Vertical">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-arrows-alt-v"></span>
+</span>
+</button>
+</div>
+<div class="btn-group">
+<button type="button" class="btn btn-primary" data-method="reset" title="Reset">
+<span class="docs-tooltip" data-toggle="tooltip">
+AUTO FIT
+</span>
+</button>
+<label class="btn btn-primary btn-upload" for="inputImage" title="Upload image file">
+<input type="file" class="sr-only" id="inputImage" name="file" accept="image/*" />
+<span class="docs-tooltip" data-toggle="tooltip" title="Import image with Blob URLs">
+<span class="fa fa-upload"></span>
+</span>
+</label>
+<button type="button" class="btn btn-success" data-method="getCroppedCanvas" data-option="{ &quot;maxWidth&quot;: 64, &quot;maxHeight&quot;: 64 }" title="Crop">
+<span class="docs-tooltip" data-toggle="tooltip">
+<span class="fa fa-check"></span>
+</span>
+</button>
+</div>
+<div style="float: right;">
+<div class="input-group" style="width:100%;">
+<input id="file_name" type="text" class="form-control" placeholder="File Name (opcional)" aria-label="Recipient's username" aria-describedby="button-addon2" />
+<button class="btn btn-outline-success" type="button" ng-click="download('skin')" id="button-addon2">
+Download
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-2">
+
+<div class="input-group input-group-sm" ng-repeat="key in generateGlowLenArray() track by $index">
+
+<span class="input-group-prepend">
+<label class="input-group-text" for="glow{{$index}}" ng-style="{'background-color': data.selectedGlow[$index].hex};">&nbsp;&nbsp;</label>
+</span>
+<select name="glow{{$index}}" id="glow{{$index}}" class="form-control" ng-options="option as option.label for option in baseColor.glow track by option.name" ng-model="data.selectedGlow[$index]"></select>
+
+</div>
+</div>
+</div>
+
+<div style="border: 1px solid #000;">
+</div>
+<div class="row">
+<div class="col-12" style="margin-top: 15px">
+<h4>RESULT</h4>
+<div style="position: relative;">
+<div id="result_skinlab" style="
+              margin-top: 5px;
+              padding: 30px 10px;
+              border: 4px solid #fd0dab;
+              color: #fff;
+              background-image: url(https://i.imgur.com/lbultXs.png);
+              position: relative;
+              min-height: 230px;
+              ">
+NO IMAGE
+</div>
+
+</div>
+<br/>
+
+</div>
+</div>
+<hr>
+<h2>SKIN VIEW</h2>
+<div>
+<div class="col-3"> <input class="form-control" type="file" id="formFileJson" accept=".json" /> </div>
+<div class="col-12" id="skinsView"></div>
+<br>
+<button class="btn btn-primary" ng-click="unificationFiles()">COMPILE SKIN</button>
+<button class="btn btn-primary" ng-click="clearFiles()">CLEAR</button>
+</div>
+<div class="modal fade docs-cropped" id="getCroppedCanvasModal" role="dialog" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="getCroppedCanvasTitle">Add ID LOCK</h5>
+</div>
+<div class="modal-body">
+<div class="form-group row">
+<div class="input-group mb-3">
+<input type="text" class="form-control" id="id" ng-model="formIdBlock.id" placeholder="ID Wormate" aria-label="ID Wormate" aria-describedby="button-addon2">
+<button class="btn btn-outline-secondary" type="button" id="button-addon2" ng-click="addIdBlock()">ADD</button>
+</div>
+<div ng-show="modalSkin.associados.length > 0">
+<fieldset>
+<legend>LIST ID</legend>
+<div class="card" ng-repeat="id in modalSkin.associados track by $index">
+<div class="card-body">
+{{id}}
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<a class="btn btn-primary" style="visibility: hidden;" id="download" href="javascript:void(0);" download="cropped.jpg">Download</a>
+<hr>
+
+ <iframe width="100%" height="580px" src="https://haylamday.com/skinlab/hat.html" scrolling="no"></iframe>
+
+<style>
+        body {
+          background-color: #EEE;
+        }
+
+        .layer {
+          transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .dragover {
+          border: 3px dashed #eb2e03;
+          transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .dragging {
+          opacity: 0.5;
+          transform: scale(1.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-item img {
+          width: 100%;
+          background-color: #000;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        .preview {
+          background-image: url('./assets/bkgnd0.png');
+          width: 100%;
+          min-height: 330px;
+          background-color: #000;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border: #eb2e03 5px solid;
+        }
+      </style>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://pixijs.download/v5.3.3/pixi.min.js"></script>
+
+<script src="https://unpkg.com/jquery@3/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="/skinlab/js/components.js"></script>
+<script src="/skinlab/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js" integrity="sha512-ooSWpxJsiXe6t4+PPjCgYmVfr1NS5QXJACcR/FPpsdm6kqG1FmQ2SVyg2RXeVuCRBLr0lWHnWJP6Zs1Efvxzww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</div></body>
+</html>
