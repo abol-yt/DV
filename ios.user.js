@@ -1,12 +1,13 @@
 // ==UserScript==
-// @name         Wormate.io JS + CSS Uzaktan Yükleyici
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Hem JS hem CSS dosyasını uzaktan yükler
-// @author       Sen
-// @match        ://wormate.io/
-// @grant        none
-// ==/UserScript==
+// @name         Wormate Friends Connect
+// @namespace
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://wormate.io/*
+// @connect      haylamday.com
+// @run-at       document-start
+// @grant        GM_xmlhttpRequest
 
 (function () {
     'use strict';
