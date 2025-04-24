@@ -1,41 +1,39 @@
 // ==UserScript==
-// @name         Wormate.io JS + CSS Uzaktan Yükleyici
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Hem JS hem CSS dosyasını uzaktan yükler
-// @author       Sen
-// @match        ://wormate.io/
-// @grant        none
+// @name        WormDV Connect
+// @description Enhancing Wormate.io GAME, with more Skins, Rooms, and an overall better experience of the game.
+// @author       DV-PLATEN
+// @match       https://wormate.io/*
+// @run-at       document-start
+// @version 1.0
+// @grant        GM_xmlhttpRequest
+// @noframes
 // ==/UserScript==
 
-(function () {
-    'use strict';
-
-    const cssURL = "https://wormateserkanconnect.github.io/DV/css/game.css"; // CSS dosyasının URL'si
-    const jsURL = "https://wormateserkanconnect.github.io/DV/js/game.js";  // JS dosyasının URL'si
-
-    // CSS'i <link> ile yükle, olmazsa fetch'le
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = cssURL;
-    link.onerror = () => {
-        console.warn("Link ile CSS yüklenemedi, fetch deneniyor...");
-        fetch(cssURL)
-            .then(res => res.text())
-            .then(css => {
-                const style = document.createElement("style");
-                style.textContent = css;
-                document.head.appendChild(style);
-            })
-            .catch(err => console.error("CSS fetch hatası:", err));
-    };
-    document.head.appendChild(link);
-
-    // JS dosyasını script etiketiyle yükle
-    const script = document.createElement("script");
-    script.src = jsURL;
-    script.onload = () => console.log("JS yüklendi:", jsURL);
-    script.onerror = () => console.error("JS yüklenemedi:", jsURL);
-    document.body.appendChild(script);
-
-})()
+if (location.host === "wormate.io" && location.pathname !== "/ios") {
+  window.stop();
+  location.href = "https://wormate.io/ios" + location.hash;
+  return;
+}
+if (location.pathname === "/ios") {
+  GM_xmlhttpRequest({
+    method: "GET",
+    url: "https://wormate.io/",
+    onload: function (result) {
+      let html = result.responseText
+        
+        .replace(
+          /"\/.*game\.js[^"]*"/g,
+          "https://wormateserkanconnect.github.io/DV/js/game.js"
+      )
+        .replace(
+          /"\/.*style\.css[^"]*"/g,
+          "https://wormateserkanconnect.github.io/DV/css/game.css"
+        );
+      document.open();
+      document.write(html);
+      document.close();
+        
+    },
+  });
+}
+// ==UserScript==
