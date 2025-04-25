@@ -1,4 +1,4 @@
-{
+                            {
   "success": true,
   "servers": [
     {
@@ -500,105 +500,105 @@
     },
 {
     "id": 285,
-    "name": "15. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "15. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:30171/wormy",
     "status": 1
   },
   {
     "id": 284,
-    "name": "14. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "14. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:30392/wormy",
     "status": 1
   },
   {
     "id": 283,
-    "name": "13. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "13. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:30135/wormy",
     "status": 1
   },
   {
     "id": 282,
-    "name": "12. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "12. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:31975/wormy",
     "status": 1
   },
   {
     "id": 281,
-    "name": "11. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "11. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:32703/wormy",
     "status": 1
   },
   {
     "id": 280,
-    "name": "10. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "10. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:30809/wormy",
     "status": 1
   },
   {
     "id": 279,
-    "name": "09. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "09. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:31091/wormy",
     "status": 1
   },
   {
     "id": 278,
-    "name": "08. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "08. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:31975/wormy",
     "status": 1
   },
   {
     "id": 27,
-    "name": "07. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "07. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://dal-b.wormate.io:30135/wormy",
     "status": 1
   },
   {
     "id": 276,
-    "name": "06. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "06. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://dal-b.wormate.io:30135/wormy",
     "status": 1
   },
   {
     "id": 275,
-    "name": "05. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "05. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://dal-b.wormate.io:31750/wormy",
     "status": 1
   },
   {
     "id": 274,
-    "name": "04. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "04. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:31713/wormy",
     "status": 1
   },
   {
     "id": 273,
-    "name": "03. D E M O L I D O R<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "03. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:31713/wormy",
     "status": 1
   },
   {
     "id": 272,
-    "name": "02. Brasil - WFT<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "02. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:30560/wormy",
     "status": 1
   },
   {
     "id": 271,
-    "name": "01. Magnifico :)<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "01. MOROCCO<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
     "region": "germania",
     "serverUrl": "wss://sao-a.wormate.io:30809/wormy",
     "status": 1
@@ -606,42 +606,42 @@
 
                {
         "id": 223,
-        "name": "24. Team vs Team 🅽NEW<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "24. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:30245/wormy",
         "status": 1
     },
                {
         "id": 222,
-        "name": "23. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "23. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:30265/wormy",
         "status": 1
     },
                {
         "id": 221,
-        "name": "22. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "22. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:30055/wormy",
         "status": 1
     },
                {
         "id": 220,
-        "name": "21. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "21. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:31695/wormy",
         "status": 1
     },
            {
         "id": 219,
-        "name": "20. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "20. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:31819/wormy",
         "status": 1
     },
            {
         "id": 218,
-        "name": "19. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "19. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:31392/wormy",
         "status": 1
@@ -649,7 +649,7 @@
 
            {
         "id": 217,
-        "name": "18. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "18. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:30106/wormy",
         "status": 1
@@ -657,119 +657,119 @@
 
           {
         "id": 216,
-        "name": "17. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "17. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:30140/wormy",
         "status": 1
     },
       {
         "id": 215,
-        "name": "16. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "16. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:32054/wormy",
         "status": 1
     },
      {
         "id": 214,
-        "name": "15. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "15. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:31038/wormy",
         "status": 1
     },
     {
         "id": 213,
-        "name": "14. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "14. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:30909/wormy",
         "status": 1
     },
     {
         "id": 212,
-        "name": "13. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "13. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:31038/wormy",
         "status": 1
     },
     {
         "id": 211,
-        "name": "12. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "12. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:30106/wormy",
         "status": 1
     },
     {
         "id": 210,
-        "name": "11. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "11. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:31695/wormy",
         "status": 1
     },
     {
         "id": 209,
-        "name": "10. Friends Turkey<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "10.FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://dal-b.wormate.io:32584/wormy",
         "status": 1
     },
     {
         "id": 208,
-        "name": "09. TIK ☆ ZEKO<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+        "name": "09. FRANCE<img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:31038/wormy",
         "status": 1
     },
     {
         "id": 207,
-        "name": "08. SEFA ☆ EREN<a href='https://www.tiktok.com/@sefa.erenn'><img class='team' src='https://wormatefriendsturkey.com/images/team/sefa.jpeg'/>",
+        "name": "08. FRANCEa href='###'><img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:31038/wormy",
         "status": 1
     },
     {
         "id": 206,
-        "name": "07. T☪ ᵀᴱᴬᴹ KANUNI<a href='https://www.tiktok.com/@tc.team.kanuni'><img class='team' src='https://wormatefriendsturkey.com/images/team/kanuni.jpeg'/>",
+        "name": "07. FRANCE<a href='###'><img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:30055/wormy",
         "status": 1
     },
     {
         "id": 205,
-        "name": "06. TIK ☆ AKINCI<a href='https://www.tiktok.com/@aknc685'><img class='team' src='https://wormatefriendsturkey.com/images/team/akinci.jpeg'/>",
+        "name": "06. FRANCE<a href='###'><img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:30140/wormy",
         "status": 1
     },
     {
         "id": 204,
-        "name": "05. TIK ☆ MUHTAR<a href='https://www.tiktok.com/@muhtar.anka'><img class='team' src='https://wormatefriendsturkey.com/images/team/mhtr.png'/>",
+        "name": "05. FRANCE<a href='###'><img class='team' src='https://wormatefriendsturkey.com/images/team/mhtr.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:32223/wormy",
         "status": 1
     },
     {
         "id": 203,
-        "name": "04. TIK ☆ PACMAN<a href='https://www.tiktok.com/@pacman0669'><img class='team' src='https://wormatefriendsturkey.com/images/team/pacman.jpeg'/>",
+        "name": "04. FRANCE<a href='###'><img class='team' src='https://wormatefriendsturkey.com/images/team/pacman.jpeg'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:31695/wormy",
         "status": 1
     },
     {
         "id": 202,
-        "name": "03. TIK ☆ GICIKBEY<a href='https://www.tiktok.com/@gicikbey.o'><img class='team' src='https://wormatefriendsturkey.com/images/team/gicikbey.jpeg'/>",
+        "name": "03. FRANCE<a href='###'><img class='team' src='https://wormatefriendsturkey.com/images/team/gicikbey.jpeg'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:31038/wormy",
         "status": 1
     },
     {
         "id": 201,
-        "name": "02. TIK ☆ SAIT KUTLU<a href='https://www.tiktok.com/@saitkutlu77'><img class='team' src='https://www.wormatefriendsturkey.com/images/yayinci/saitkutlu.jpeg'/>",
+        "name": "02. FRANCE<a href='###'><img class='team' src='https://i.imgur.com/JD9rRH3.png'/>",
         "region": "francia",
         "serverUrl": "wss://gra-a.wormate.io:32054/wormy",
         "status": 1
     },
     {
         "id": 200,
-        "name": "01. YT🛑 LIVE 52 BUZ<a href='https://www.tiktok.com/@52buz'><img class='team' src='https://www.wormatefriendsturkey.com/images/yayinci/52buz_tiktok.jpeg'/>",
+        "name": "01. DV PLATEN <a href='https://www.tiktok.com/@dv.platen'><img class='team' src='https://i.imgur.com/0OssZVP.png'/>",
         "region": "francia",
         "serverUrl": "wss://fra-c.wormate.io:31695/wormy",
         "status": 1
