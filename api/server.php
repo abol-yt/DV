@@ -257,7 +257,7 @@
             "id": "37",
             "name": "2 - Germany <i class=\"fa fa-solid fa-signal\" style=\"color:Lime\"><\/i>",
             "region": "peru",
-            "serverUrl": "wss:\/\/fra-c.wormate.io:30106\/wormy",
+            "serverUrl": "wss:\/\/fra-c.wormate.io:30259\/wormy",
             "status": "1"
         },
         {
@@ -910,6 +910,20 @@
             "region": "granbretana",
             "serverUrl": "wss =>\/\/dal-b.wormate.io =>31163\/wormy",
             "status": "1"
-        }
+        },
+        {
+            "id": "160",
+            "name": "40 - Germany <i class=\"fa fa-solid fa-signal\" style=\"color:red\"><\/i>",
+            "region": "peru",
+            "serverUrl": ""wss:\/\/fra-c.wormate.io:31859\/wormy",
+            "status": "1"
+        },
+        {
+            "id": "161",
+            "name": "41 - Germany <i class=\"fa fa-solid fa-signal\" style=\"color:red\"><\/i>",
+            "region": "peru",
+            "serverUrl": "wss:\/\/fra-c.wormate.io:32611\/wormy",
+            "status": "1"
+        }            
     ]
 }
