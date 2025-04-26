@@ -67,10 +67,6 @@ Promise.all([
     loadStylesheet(linkCSS),
     loadStylesheet("https://wormateserkanconnect.github.io/DV/fonts/font.css"),
     loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
-]).then(() => {
-   
-                
-
 
 
 var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV";
@@ -8642,7 +8638,8 @@ isValidHotkey = function (event) {
   }
 };
 console.log("FDZ - Version 1.0.5 Released in 2025");
-
+           /*zoom by yildo.com*/  
+// "z" tuÅŸuna basÄ±ldÄ±ÄŸÄ±nda zoom iÅŸlemini durdurma fonksiyonu
 
 function stopZoom(event) {
 
@@ -8655,5 +8652,8 @@ if (event.key === 'z') {
 }
 }
 
+// TuÅŸ olayÄ±nÄ± dinleyiciye baÄŸlama
 
 window.addEventListener('keydown', stopZoom);
+
+           /*zoom by yildo.com*/  
