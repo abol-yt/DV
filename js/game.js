@@ -71,30 +71,7 @@ Promise.all([
     if (isLoadingEnabled) {
         document.documentElement.insertAdjacentHTML("beforeend", `
                 
-                ${Array.from({ length: 12 }).map((_, i) => {
-                    const angle = i / 12 * (Math.PI * 2);
-                    const x = Math.cos(angle) * 120;
-                    const y = Math.sin(angle) * 120;
-                    return `<i class="fa-solid fa-heart heart" style="transform: translate(${x}px, ${y}px);"></i>`;
-                }).join("")}
 
-                <div class="progress-bar-container">
-                    <div class="progress-bar" id="progress-bar"></div>
-                </div>
-            </div>
-        `);
-        
-        window.onload = function () {
-            document.getElementById("progress-bar").style.width = "100%";
-            setTimeout(() => {
-                document.getElementById("loading-screen").style.opacity = "0";
-                setTimeout(() => {
-                    document.getElementById("loading-screen").remove();
-                }, 500);
-            }, 6000);
-        };
-    }
-});
 
 
 var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV";
