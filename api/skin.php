@@ -11130,7 +11130,7 @@
     {
       "id": 1199,
       "guest": false,
-      "nonbuyable": false,
+      "nonbuyable": true,
       "price": 0,
       "priceBefore": 0,
       "prime": "c__yllw",
@@ -11147,11 +11147,11 @@
       ],
       "glow": [
         "a_white",
-        "a__card",
-        "a__card",
-        "a_grass",
-        "a_grass",
-        "a__emer",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
         "a_white",
         "a_white",
         "a_white"
@@ -11176,15 +11176,15 @@
         "25ypg_02_0"
       ],
       "glow": [
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw",
-        "a__yllw"
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white"
       ]
     },
     {
@@ -17095,7 +17095,8 @@
         "en": "2025"
       },
       "list": [
-        "1121"
+        "1121",
+        "1200"
       ]
     },
     {
@@ -18551,7 +18552,7 @@
     },
     "25ypg_02": {
       "custom": true,
-      "relativePath": "https://i.imgur.com/AN870eT.png"
+      "relativePath": "https://i.imgur.com/L4a6Qlz.png"
     },
     "25ypg_03": {
       "custom": true,
