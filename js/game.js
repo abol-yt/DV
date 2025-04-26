@@ -68,8 +68,7 @@ Promise.all([
     loadStylesheet("https://wormateserkanconnect.github.io/DV/fonts/font.css"),
     loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
 ]).then(() => {
-    if (isLoadingEnabled) {
-        document.documentElement.insertAdjacentHTML("beforeend", `
+   
                 
 
 
