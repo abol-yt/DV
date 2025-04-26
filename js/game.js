@@ -1,5 +1,3 @@
-
-var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV";
 var TIME = new Date().getTime();
 var linkCSS = "https://wormateserkanconnect.github.io/DV/css/custom.css?v=" + TIME;
 
@@ -65,16 +63,9 @@ var _typeof = (function() {
 let isLoadingEnabled = true; // قم بتغيير هذه القيمة إلى false لتعطيل شاشة التحميل
 
 // إضافة المحتوى داخل الصفحة بعد تحميل الأنماط
-Promise.all([
-    loadStylesheet(linkCSS),
-    loadStylesheet("https://wormateserkanconnect.github.io/DV/fonts/font.css"),
-    loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
 
-
-  function startGame() {
-  console.log('Oyun başladı!');
-  window.detectLog = null;
-}
+var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV";
+window.detectLog = null;
 const _wrmxt = {
   BETAisSkinCustom(skin) {
     var regex = /[a-zA-Z]/;
