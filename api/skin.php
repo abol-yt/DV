@@ -19516,7 +19516,7 @@
     },
     "hat_133": {
       "custom": true,
-      "relativePath": "https://www.baddawi.com/FDZ/images/texture/hat/hat_133.png"
+      "relativePath": "https://i.imgur.com/7bMbvla.png"
     },
     "hat_134": {
       "custom": true,
@@ -20112,7 +20112,7 @@
     },
     "hat_933": {
       "custom": true,
-      "relativePath": "https://www.baddawi.com/FDZ/images/texture/hat/hat_933.png"
+      "relativePath": "https://i.imgur.com/8P08TU6.png"
     },
     "hat_935": {
       "custom": true,
