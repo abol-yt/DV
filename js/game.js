@@ -70,9 +70,6 @@ Promise.all([
 ]).then(() => {
     if (isLoadingEnabled) {
         document.documentElement.insertAdjacentHTML("beforeend", `
-            <div class="fixed-background" id="loading-screen">
-                <div class="loading-background"></div>
-                <img src="https://i.imgur.com/547I7NL.png" alt="server logo" class="logo">
                 
                 ${Array.from({ length: 12 }).map((_, i) => {
                     const angle = i / 12 * (Math.PI * 2);
