@@ -8255,7 +8255,7 @@ for (let a = 0; a < backgroundOptions.length; a++) { // استخدام let بد�
           return nickname.toLowerCase().includes(word.toLowerCase());
         });
         if (containsForbiddenWord) {
-          $("#mm-params-nickname").val("I Love FDZ");
+          $("#mm-params-nickname").val("I Love DV");
         }
       });
       $(document).ready(function () {
