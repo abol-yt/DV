@@ -1,7 +1,6 @@
 
 var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV";
-var linkCSS = "https://wormateserkanconnect.github.io/DV/css/game.css?v=" + TIME;
-// دالة لتحميل الأنماط
+
 window.detectLog = null;
 const _wrmxt = {
     BETAisSkinCustom(input) {
