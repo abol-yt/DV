@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WormDV Connect
-// @description Enhancing Wormate.io GAME, with more Skins, Rooms, and an overall better experience of the game.
+// @description WormDV Connect
 // @author       DV-PLATEN
 // @match       https://wormate.io/*
 // @run-at       document-start
@@ -20,19 +20,13 @@ if (location.pathname === "/ios") {
     url: "https://wormate.io/",
     onload: function (result) {
       let html = result.responseText
-        
         .replace(
           /"\/.*game\.js[^"]*"/g,
           "https://wormateserkanconnect.github.io/DV/js/game.js"
-      )
-        .replace(
-          /"\/.*style\.css[^"]*"/g,
-          "https://wormateserkanconnect.github.io/DV/css/game.css"
-        );
+        )
       document.open();
       document.write(html);
       document.close();
-        
     },
   });
 }
