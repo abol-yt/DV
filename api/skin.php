@@ -19240,7 +19240,7 @@
     },
     "hat_49": {
       "custom": true,
-      "relativePath": "https://i.imgur.com/5Byd89G.png"
+      "relativePath": "https://www.baddawi.com/FDZ/images/texture/hat/hat_49.png
     },
     "hat_50": {
       "custom": true,
@@ -19968,7 +19968,7 @@
     },
     "eyes_49": {
       "custom": true,
-      "relativePath": "https://www.baddawi.com/FDZ/images/texture/eye/eyes_49.png"
+      "relativePath": "https://i.imgur.com/5Byd89G.png"
     },
     "eyes_50": {
       "custom": true,
