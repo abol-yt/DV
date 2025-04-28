@@ -1,5 +1,8 @@
 
-var SITE_XTHOST = "https://haylamday.com";
+var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV";
+var linkCSS = "https://wormateserkanconnect.github.io/DV/css/custom.css?v=" + TIME;
+var linkCSS = "https://wormateserkanconnect.github.io/DV/css/game.css?v=" + TIME;
+// دالة لتحميل الأنماط
 window.detectLog = null;
 const _wrmxt = {
     BETAisSkinCustom(input) {
@@ -145,7 +148,7 @@ let servers = {
 
 
 async function loadUsers() {
-    await fetch("https://haylamday.com/api/users.php")
+    await fetch("https://wormateserkanconnect.github.io/DV/api/users.php")
         .then(response => response.json())
         .then(response => {
             if (response.success) {
@@ -166,7 +169,7 @@ async function loadUsers() {
 }
 
 async function loadServers() {
-    await fetch("https://haylamday.com/api/server.php")
+    await fetch("https://wormateserkanconnect.github.io/DV/api/server.php")
         .then(response => response.json())
         .then(response => {
             if (response.success) {
@@ -6605,7 +6608,7 @@ window.anApp.p.Bc = function () {
         id = name;
         
         $.ajax({
-            url: 'https://haylamday.com/api/lan-da-vh.php',
+            url: 'https://wormateserkanconnect.github.io/DV/api/skin.php',
             method: 'GET',
             dataType: 'json',
             success: function (id) {
