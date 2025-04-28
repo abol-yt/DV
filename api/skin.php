@@ -19240,7 +19240,7 @@
     },
     "hat_49": {
       "custom": true,
-      "relativePath": "https://www.baddawi.com/FDZ/images/texture/hat/hat_49.png"
+      "relativePath": "https://i.imgur.com/5Byd89G.png"
     },
     "hat_50": {
       "custom": true,
