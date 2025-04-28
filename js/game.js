@@ -355,17 +355,17 @@ if (theoKzObjects.ModeStremersaveheadshot) {
   ctx.value2_kill = new PIXI.Text("", ctx.fontStyle.morado1);
 }
 
-ctx.label_hs.x = 15;
+ctx.label_hs.x = 65;
 ctx.label_hs.y = 100;
-ctx.label_kill.x = 65;
+ctx.label_kill.x = 15;
 ctx.label_kill.y = 100;
-ctx.value1_hs.x = 20;
+ctx.value1_hs.x = 70;
 ctx.value1_hs.y = 116;
-ctx.value1_kill.x = 65;
-ctx.value1_kill.y = 100;
-ctx.value2_hs.x = 15;
+ctx.value1_kill.x = 20;
+ctx.value1_kill.y = 116;
+ctx.value2_hs.x = 65;
 ctx.value2_hs.y = 133;
-ctx.value2_kill.x = 65;
+ctx.value2_kill.x = 15;
 ctx.value2_kill.y = 133;
 ctx.containerCountInfo = new PIXI.Container();
 ctx.containerCountInfo.x = -45;
