@@ -345,7 +345,7 @@ ctx.value_server.x = 25;
 ctx.value_server.y = 0;
 ctx.label_hs = new PIXI.Text("HS", ctx.fontStyle.amarillo);
 ctx.value1_hs = new PIXI.Text("0", ctx.fontStyle.amarillo);
-ctx.label_kill = new PIXI.Text("KL", ctx.fontStyle.morado);
+ctx.label_kill = new PIXI.Text("KILL", ctx.fontStyle.morado);
 ctx.value1_kill = new PIXI.Text("0", ctx.fontStyle.morado);
 if (theoKzObjects.ModeStremersaveheadshot) {
   ctx.value2_hs = new PIXI.Text("", ctx.fontStyle.amarillo1);
