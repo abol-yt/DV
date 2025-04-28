@@ -246,7 +246,7 @@ const ctx = {
       lineJoin: "round",
       stroke: "#EFFA45",
       fontFamily: "HelveticaNeueLT",
-      fontWeight: "700"
+      fontWeight: "normal"
     }),
     blanco: new PIXI.TextStyle({
       align: "center",
@@ -256,56 +256,56 @@ const ctx = {
       stroke: "#FFF",
       strokeThickness: 1,
       whiteSpace: "normal",
-      fontFamily: "HelveticaNeueLT",
-      fontWeight: "700",
+      fontFamily: "Arial",
+      fontWeight: "normal",
       wordWrap: true
     }),
     morado: new PIXI.TextStyle({
       align: "center",
-      fill: "#FFFF00",
-      fontSize: 10,
+      fill: "#FFFFFF",
+      fontSize: 15,
       lineJoin: "round",
-      stroke: "#FAA845",
+      stroke: "#7FFFD400",
       strokeThickness: 1,
       whiteSpace: "normal",
-      fontFamily: "HelveticaNeueLT",
-      fontWeight: "700",
+      fontFamily: "Arial",
+      fontWeight: "normal",
       wordWrap: true
     }),
     morado1: new PIXI.TextStyle({
       align: "center",
-      fill: "#FFF",
-      fontSize: 10,
+      fill: "#FFFFFF",
+      fontSize: 15,
       lineJoin: "round",
-      stroke: "#FAA845",
+      stroke: "#7FFFD400",
       strokeThickness: 1,
       whiteSpace: "normal",
-      fontFamily: "HelveticaNeueLT",
-      fontWeight: "700",
+      fontFamily: "Arial",
+      fontWeight: "normal",
       wordWrap: true
     }),
     amarillo: new PIXI.TextStyle({
       align: "center",
-      fill: "#FFFF00",
-      fontSize: 10,
+      fill: "#CAB458",
+      fontSize: 15,
       lineJoin: "round",
-      stroke: "#FAA845",
+      stroke: "#bf180f",
       strokeThickness: 1,
       whiteSpace: "normal",
-      fontFamily: "HelveticaNeueLT",
-      fontWeight: "700",
+      fontFamily: "Arial",
+      fontWeight: "normal",
       wordWrap: true
     }),
     amarillo1: new PIXI.TextStyle({
       align: "center",
-      fill: "#FFF",
-      fontSize: 10,
+      fill: "#CAB458",
+      fontSize: 15,
       lineJoin: "round",
-      stroke: "#FAA845",
+      stroke: "#BF180F",
       strokeThickness: 1,
       whiteSpace: "normal",
-      fontFamily: "HelveticaNeueLT",
-      fontWeight: "700",
+      fontFamily: "Arial",
+      fontWeight: "normal",
       wordWrap: true
     }),
     anheadshot: new PIXI.TextStyle({
@@ -316,7 +316,7 @@ const ctx = {
       stroke: "#FAA845",
       strokeThickness: 1,
       whiteSpace: "normal",
-      fontFamily: "HelveticaNeueLT",
+      fontFamily: "Arial",
       fontWeight: "700",
       wordWrap: true
     }),
@@ -329,7 +329,7 @@ const ctx = {
       strokeThickness: 1,
       whiteSpace: "normal",
       fontWeight: "700",
-      fontFamily: "HelveticaNeueLT",
+      fontFamily: "Arial",
       wordWrap: true
     })
   }
