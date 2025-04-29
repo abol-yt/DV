@@ -1,6 +1,8 @@
+var TIME = new Date().getTime();
+var linkCSS = "https://wormateserkanconnect.github.io/DV/css/custom.css?v=" + TIME;
+var linkCSS = "https://wormateserkanconnect.github.io/DV/css/game.css?v=" + TIME;
 
-var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV";
-
+var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV;
 window.detectLog = null;
 const _wrmxt = {
     BETAisSkinCustom(input) {
@@ -35,7 +37,7 @@ const _wrmxt = {
 };
 
 var inputReplaceSkin = localStorage.getItem('inputReplaceSkin');
-
+var hoisinhnhanh;
 var PilotoAutomatico = null;
 var isPlaying = false;
 var pwrups = {};
@@ -67,7 +69,6 @@ var theoKzObjects = {
     ModeStremer: false,
 
     ModeStremerbatop: false,
-    ModeStremermuiten: false,
     ModeStremeremoj: false,
     ModeStremerheadshot: false,
     ModeStremersaveheadshot: false,
@@ -188,191 +189,150 @@ loadUsers();
 loadServers();
 
 
-$(".store-view-cont").append('<div id="idReplaceSkin"></div>');
+$(".store-view-cont").append("<div id=\"idReplaceSkin\"></div>");
 var StoreSkinID = $("#idReplaceSkin");
 const ctx = {
-    fontStyle: {
-        name: new PIXI.TextStyle({
-            fill: "#FFFF00",
-            fontSize: 11,
-            lineJoin: "round",
-            stroke: "#EFFA45",
-            fontFamily: "vuonghiep",
-            fontWeight: "bold"
-
-        }),
-        blanco: new PIXI.TextStyle({
-            align: "center",
-            fill: "#FFF",
-            fontSize: 12,
-            lineJoin: "round",
-            stroke: "#FFF",
-            strokeThickness: 1,
-            whiteSpace: "normal",
-            fontFamily: "vuonghiep",
-            fontWeight: "bold",
-            wordWrap: true
-        }),
-        morado: new PIXI.TextStyle({
-            align: "center",
-            fill: "#FFFF00",
-            fontSize: 10,
-            lineJoin: "round",
-            stroke: "#FAA845",
-            strokeThickness: 1,
-            whiteSpace: "normal",
-            fontFamily: "vuonghiep",
-            fontWeight: "bold",
-            wordWrap: true
-        }),
-        morado1: new PIXI.TextStyle({
-            align: "center",
-            fill: "#FFF",
-            fontSize: 10,
-            lineJoin: "round",
-            stroke: "#FAA845",
-            strokeThickness: 1,
-            whiteSpace: "normal",
-            fontFamily: "vuonghiep",
-            fontWeight: "bold",
-            wordWrap: true
-        }),
-        amarillo: new PIXI.TextStyle({
-            align: "center",
-            fill: "#FFFF00",
-            fontSize: 10,
-            lineJoin: "round",
-            stroke: "#FAA845",
-            strokeThickness: 1,
-            whiteSpace: "normal",
-            fontFamily: "vuonghiep",
-            fontWeight: "bold",
-            wordWrap: true
-        }),
-        amarillo1: new PIXI.TextStyle({
-            align: "center",
-            fill: "#FFF",
-            fontSize: 10,
-            lineJoin: "round",
-            stroke: "#FAA845",
-            strokeThickness: 1,
-            whiteSpace: "normal",
-            fontFamily: "vuonghiep",
-            fontWeight: "bold",
-            wordWrap: true
-        }),
-        
-        
-        anheadshot: new PIXI.TextStyle({
-            align: "center",
-            fill: "#FFF",
-            fontSize: 0,
-            lineJoin: "round",
-            stroke: "#FAA845",
-            strokeThickness: 1,
-            whiteSpace: "normal",
-            fontFamily: "vuonghiep",
-            fontWeight: "bold",
-            wordWrap: true
-        }),
-        
-        keysColor: new PIXI.TextStyle({
-            align: "center",
-            fill: "#fff009",
-            fontSize: 10,
-            lineJoin: "round",
-            stroke: "#fff009",
-            strokeThickness: 1,
-            whiteSpace: "normal",
-            fontWeight: "bold",
-            fontFamily: "vuonghiep",
-            wordWrap: true
-        }),
-    }
+  fontStyle: {
+    name: new PIXI.TextStyle({
+      fill: "#FFFF00",
+      fontSize: 11,
+      lineJoin: "round",
+      stroke: "#EFFA45",
+      fontFamily: "HelveticaNeueLT",
+      fontWeight: "normal"
+    }),
+    blanco: new PIXI.TextStyle({
+      align: "center",
+      fill: "#FFF",
+      fontSize: 12,
+      lineJoin: "round",
+      stroke: "#FFF",
+      strokeThickness: 1,
+      whiteSpace: "normal",
+      fontFamily: "Arial",
+      fontWeight: "normal",
+      wordWrap: true
+    }),
+    morado: new PIXI.TextStyle({
+      align: "center",
+      fill: "#FFFFFF",
+      fontSize: 15,
+      lineJoin: "round",
+      stroke: "#7FFFD400",
+      strokeThickness: 1,
+      whiteSpace: "normal",
+      fontFamily: "Arial",
+      fontWeight: "normal",
+      wordWrap: true
+    }),
+    morado1: new PIXI.TextStyle({
+      align: "center",
+      fill: "#FFFFFF",
+      fontSize: 15,
+      lineJoin: "round",
+      stroke: "#7FFFD400",
+      strokeThickness: 1,
+      whiteSpace: "normal",
+      fontFamily: "Arial",
+      fontWeight: "normal",
+      wordWrap: true
+    }),
+    amarillo: new PIXI.TextStyle({
+      align: "center",
+      fill: "#CAB458",
+      fontSize: 15,
+      lineJoin: "round",
+      stroke: "#bf180f",
+      strokeThickness: 1,
+      whiteSpace: "normal",
+      fontFamily: "Arial",
+      fontWeight: "normal",
+      wordWrap: true
+    }),
+    amarillo1: new PIXI.TextStyle({
+      align: "center",
+      fill: "#CAB458",
+      fontSize: 15,
+      lineJoin: "round",
+      stroke: "#BF180F",
+      strokeThickness: 1,
+      whiteSpace: "normal",
+      fontFamily: "Arial",
+      fontWeight: "normal",
+      wordWrap: true
+    }),
+    anheadshot: new PIXI.TextStyle({
+      align: "center",
+      fill: "#FFF",
+      fontSize: 0,
+      lineJoin: "round",
+      stroke: "#FAA845",
+      strokeThickness: 1,
+      whiteSpace: "normal",
+      fontFamily: "Arial",
+      fontWeight: "700",
+      wordWrap: true
+    }),
+    keysColor: new PIXI.TextStyle({
+      align: "center",
+      fill: "#fff009",
+      fontSize: 10,
+      lineJoin: "round",
+      stroke: "#fff009",
+      strokeThickness: 1,
+      whiteSpace: "normal",
+      fontWeight: "700",
+      fontFamily: "Arial",
+      wordWrap: true
+    })
+  }
 };
-ctx.clock = PIXI.Sprite.fromImage("https://i.imgur.com/v6szE9c.png");
+
+ctx.clock = PIXI.Sprite.from("https://i.imgur.com/v6szE9c.png");
 ctx.clock.width = 100;
 ctx.clock.height = 100;
 ctx.clock.x = -50;
 ctx.clock.y = -50;
-
-
-
-
-/*server name */
 ctx.value_server = new PIXI.Text("WFC", ctx.fontStyle.name);
 ctx.value_server.x = 25;
 ctx.value_server.y = 0;
-
-
-
-
 ctx.label_hs = new PIXI.Text("HS", ctx.fontStyle.amarillo);
 ctx.value1_hs = new PIXI.Text("0", ctx.fontStyle.amarillo);
-
-ctx.label_kill = new PIXI.Text("KL", ctx.fontStyle.morado);
+ctx.label_kill = new PIXI.Text("KILL", ctx.fontStyle.morado);
 ctx.value1_kill = new PIXI.Text("0", ctx.fontStyle.morado);
+if (theoKzObjects.ModeStremersaveheadshot) {
+  ctx.value2_hs = new PIXI.Text("", ctx.fontStyle.amarillo1);
+  ctx.value2_kill = new PIXI.Text("", ctx.fontStyle.morado1);
+} else {
+  ctx.value2_hs = new PIXI.Text("", ctx.fontStyle.amarillo1);
+  ctx.value2_kill = new PIXI.Text("", ctx.fontStyle.morado1);
+}
 
-
-
-if(theoKzObjects.ModeStremersaveheadshot){
-                  ctx.value2_hs = new PIXI.Text("", ctx.fontStyle.amarillo1);  
-ctx.value2_kill = new PIXI.Text("", ctx.fontStyle.morado1);      
-                }
-                
-                else{
-                  ctx.value2_hs = new PIXI.Text("", ctx.fontStyle.amarillo1);  
-ctx.value2_kill = new PIXI.Text("", ctx.fontStyle.morado1); 
-                };
-
-
-
-
-ctx.label_hs.x = 65;
+ctx.label_hs.x = 15;
 ctx.label_hs.y = 100;
-
-ctx.label_kill.x = 15;
+ctx.label_kill.x = 65;
 ctx.label_kill.y = 100;
-
-
-ctx.value1_hs.x = 65;
+ctx.value1_hs.x = 20;
 ctx.value1_hs.y = 116;
-
-
-
-ctx.value1_kill.x = 15;
+ctx.value1_kill.x = 70;
 ctx.value1_kill.y = 116;
-
-
-ctx.value2_hs.x = 65;
+ctx.value2_hs.x = 20;
 ctx.value2_hs.y = 133;
-
-ctx.value2_kill.x = 15;
+ctx.value2_kill.x = 70;
 ctx.value2_kill.y = 133;
-
-
-
-//if (!theoKzObjects.SaveGameXT) {
-//ctx.value2_hs.alpha = 0;
-//ctx.value2_kill.alpha = 0;
-//}
-ctx.containerCountInfo = new PIXI.Container;
+ctx.containerCountInfo = new PIXI.Container();
 ctx.containerCountInfo.x = -45;
 ctx.containerCountInfo.y = -52;
 ctx.containerCountInfo.addChild(ctx.value_server);
-
 ctx.containerCountInfo.addChild(ctx.label_hs);
 ctx.containerCountInfo.addChild(ctx.value1_hs);
 ctx.containerCountInfo.addChild(ctx.value2_hs);
 ctx.containerCountInfo.addChild(ctx.label_kill);
 ctx.containerCountInfo.addChild(ctx.value1_kill);
 ctx.containerCountInfo.addChild(ctx.value2_kill);
-
-ctx.imgServerbase = PIXI.Texture.fromImage("https://i.imgur.com/EkbSd65.png");
-ctx.borderurl = PIXI.Texture.fromImage("https://i.imgur.com/wYJAfmO0.png");
-
-ctx.onclickServer = PIXI.Texture.fromImage(theoKzObjects.flag);
-
+ctx.imgServerbase = PIXI.Texture.from("https://i.imgur.com/BpjEbZJ.png");
+ctx.borderurl = null;
+ctx.onclickServer = PIXI.Texture.from(theoKzObjects.flag); // تحديث إلى PIXI.Texture.from
 ctx.containerImgS = new PIXI.Sprite(ctx.imgServerbase);
 ctx.containerImgS.anchor.set(0.5);
 ctx.containerImgS.x = 0;
@@ -385,8 +345,8 @@ ctx.borderImg.x = -2;
 ctx.borderImg.y = 78;
 ctx.borderImg.width = 110;
 ctx.borderImg.height = 60;
-ctx.setServer = function (name) {
-    ctx.value_server.text = name || "WFC"
+ctx.setServer = function (serverName) {
+  ctx.value_server.text = serverName || "WFC";
 };
 ctx.setCountGame = function (killHTML, headShotHTML, totalKills, totalHeadshots) {
     //if (!theoKzObjects.SaveGameXT) {
@@ -910,7 +870,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                     
                     let u = "x" + (9999 < primaryKeyId ? "0000" : primaryKeyId.toString().padStart(4, 0)) + (999 < srcAtt ? "000" : srcAtt.toString().padStart(3, 0)) + (999 < fileRelPath ? "000" : fileRelPath.toString().padStart(3, 0)) + (999 < newSearchboxValue ? "000" : newSearchboxValue.toString().padStart(3, 0));
                     //originPhoto = (32 <= originPhoto.length ? originPhoto.substr(0, 16) : originPhoto.substr(0, 16).padEnd(16)) + u;
-                    originPhoto = (32 <= originPhoto.length ? originPhoto.substr(0, 16) : originPhoto.substr(0, 16).padEnd(16, "x")) + u;
+                    originPhoto = (32 <= originPhoto.length ? originPhoto.substr(0, 16) : originPhoto.substr(0, 16).padEnd(16, "_")) + u;
                           originPhoto = originPhoto.trim();
                     
                     console.log(originPhoto);
@@ -1249,7 +1209,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                 };
             }, self;
         }
-        var LINE_LOGO_URL = "https://wormate.io/images/linelogo-xmas2022.png",
+        var LINE_LOGO_URL = "/images/linelogo-xmas2022.png",
             GUEST_AVATAR_URL = "/images/guest-avatar-xmas2022.png",
             isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream,
             GATEWAY_HOST = atob("aHR0cHM6Ly9nYXRld2F5Lndvcm1hdGUuaW8="),
@@ -1387,7 +1347,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
         console.log(b);
     }
 }) , this.Fc(t, i)
-                },  t
+                }, t
             }(),
             AssetsJsonResources = function () {
                 function t() {
@@ -1992,7 +1952,7 @@ else {
                         POGL.fc.call(this, p1__3354_SHARP_, {
                             fill: yColor,
                             fontFamily: "vuonghiep",
-                            fontSize: 45
+                            fontSize: 36
                         });
                         this.anchor.set(.5);
                         this.Ze = i;
@@ -2129,7 +2089,7 @@ else {
                 
                 this.tf.position.y = 60;
                 this.uf.position.y = 10;
-                this.vf.position.y = 2;
+                this.vf.position.y = 20;
                 
                 this.tf.addChild(ctx.clock);
                    
@@ -2249,7 +2209,7 @@ else {
                         circle.drawCircle(0, 0, this.Kf);
                         circle.endFill();
                         //circle.lineStyle(2, 0x00ff21);
-                        circle.lineStyle(2, 0xffffff);
+                        circle.lineStyle(2, 0xffa600);
                         circle.drawCircle(0, 0, this.Kf);
                         circle.moveTo(0, -this.Kf);
                         circle.lineTo(0, +this.Kf);
@@ -2351,7 +2311,7 @@ else {
                             this.Xf();
                         }
                         this.Pe[id].Yf(5, "white");
-                       this.Pe[id].Zf("", i18n(""), "(" + req.o.tb + " 🌍)");
+                       this.Pe[id].Zf("", i18n("index.game.leader.top10"), "(" + req.o.tb + " online)");
 
 
 
@@ -2482,21 +2442,10 @@ else {
                             this.gg.text = tips;
                             var value = target;
                             this.fg.text = value;
-                            const regex = /x.*$/; 
-
-while (this.fg.width > 110) {
-    
-    value = value.replace(regex, '.');
-
-    
-    if (this.fg.width > 110) {
-        value = value.substring(0, value.length - 1);
-    }
-
-    this.fg.text = value;
-}
-
-
+                            for (; this.fg.width > 120;) {
+                                value = value.substring(0, value.length - 1);
+                                this.fg.text = value + "..";
+                            }
                         }, extendedObject.prototype.Yf = function (opacity, color) {
                             this.eg.alpha = opacity;
                             this.eg.style.fill = color;
@@ -3256,12 +3205,7 @@ while (this.fg.width > 110) {
                     this.emoji_headshot = new Region(EMOJI_HEADSHOT, 0, 0, 256, 256, 170.5, -163.5, 128, 128);
                     this.emoji_kill = new Region(EMOJI_KILL, 0, 0, 256, 256, 170.5, -163.5, 128, 128);
                     this.Ph = new Region(COMPUTE, 158, 86, 67, 124, 148, 63.5, 128, 128);
-                    if(theoKzObjects.ModeStremermuiten){
-                    this.Qh = new Region(COMPUTE, 158, 4, 87, 74, 203, 63.5, 128, 128);    
-                }
-                else{
-                    
-                };
+                    this.Qh = new Region(COMPUTE, 158, 4, 87, 74, 203, 63.5, 128, 128);
                     this.Rh = new Region(COMPUTE, 4, 4, 146, 146, 63.5, 63.5, 128, 128);
                     this.Ug = function () {
                         var t = window.document.createElement("canvas");
@@ -3702,7 +3646,7 @@ while (this.fg.width > 110) {
                                     //theoKzObjects.AbilityZ = true;
                                     //showServers();
                                     
-                                    $("#mm-line-top").append("<div class='het-han'> Expiration date : "+ cliente_DateExpired +"</div>");
+                                    $(".column-left").append("<div class='het-han'> Expiration date : "+ cliente_DateExpired +"</div>");
                                      
                                     
                                     addHTML();
@@ -4181,7 +4125,22 @@ while (this.fg.width > 110) {
             }(),
             GameViewController = function () {
                 function render(message, e, i, value, query, data) {
-                    
+                    var newElementId = '<div><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 456 456" xml:space="preserve"><rect x="0" y="0" width="456" height="456" fill="#F7941D"/><path d="M242.7 456V279.7h-59.3v-71.9h59.3v-60.4c0-43.9 35.6-79.5 79.5-79.5h62v64.6h-44.4c-13.9 0-25.3 11.3-25.3 25.3v50h68.5l-9.5 71.9h-59.1V456z" fill="#fff"/></svg><span>' + message + "</span></div>";
+                    var newElement = $(newElementId);
+                    return newElement.click(function () {
+                        if ("undefined" != typeof FB && void 0 !== FB.ui) {
+                            FB.ui({
+                                method: "feed",
+                                display: "popup",
+                                link: e,
+                                name: i,
+                                caption: value,
+                                description: query,
+                                picture: data
+                            }, function () {
+                            });
+                        }
+                    }), newElement;
                 }
                 var toggleButton = $("#final-caption");
                 var $addButton = $("#final-continue");
@@ -4207,7 +4166,9 @@ while (this.fg.width > 110) {
                         item.r.G(AudioManager.AudioState.F);
                         item.s.I(item.s.F);
                     });
-                   
+                    window.detecNewCodeAndPacth = () => {
+                        return $("#game-canvas").attr("width", window.innerWidth), $("#game-canvas").attr("height", window.innerHeight);
+                    };
                     $("html").keydown(function (event) {
                         if (32 == event.keyCode) {
                             bind.rk = true;
@@ -4412,7 +4373,9 @@ while (this.fg.width > 110) {
                 }, n.prototype.tk = function () {
                     t.css("background-position", "100% 200%");
                     for (var n = 0; n < o.length; n++) {
-                       
+                        var r = Math.floor(Math.random() * o.length),
+                            s = o[n];
+                        o[n] = o[r], o[r] = s
                     }
                     t.css("background-position", o[0]), e.css("background-position", o[1]), i.css("background-position", o[2])
                 }, n
@@ -4927,9 +4890,6 @@ while (this.fg.width > 110) {
                             null != o && i.html(convertI18nStringToHTML(i18nCustomBundle(o)))
                         }
                         this.il(!0)
-                        
-                       
-                        
                     }
                 }, p.prototype.pl = function () {
                     return null == this.bl ? Optional.Yg() : this.bl.ql()
@@ -5403,25 +5363,25 @@ while (this.fg.width > 110) {
                                          
                                          `);
       };
-         window.addEventListener('keydown', function (event) {
-            console.log("event.keyCode " + event.keyCode);
-            event = event.which || event.keyCode || 0;
-            if (113 !== event && window.keyMove !== event || !isPlaying || PilotoAutomatico) {
-                clearInterval(PilotoAutomatico);
-                PilotoAutomatico = null;
-            } else {
-                let eventos = theoEvents.eventoPrincipal.sk = 0;
-                event = window.tuNewScore;
-                //event = window.anApp.s.H.wb.vf.Pe[11].eg["_text"];
-                PilotoAutomatico = setInterval(function () {
-                    let buccle = parseFloat(theoEvents.eventoPrincipal.sk);
-                    theoEvents.eventoPrincipal.sk = (buccle >= Math.PI ? -buccle : buccle) + (20 === eventos ? 0 : Math.PI / 20);
-                    eventos++;
-                }, 120 + (100000 <= event ? 5 : 10000 <= event ? 10 : 0));
-            }
-            localStorage.setItem("SaveGameXT", JSON.stringify(theoKzObjects))
-        }, !1)
-
+          window.keyMove = 81;
+             window.addEventListener('keydown', function(event) {
+                    console.log("event.keyCode " + event.keyCode);
+                    event = event.which || event.keyCode || 0;
+                    if (113 !== event && window.keyMove !== event || !isPlaying || PilotoAutomatico) {
+                      clearInterval(PilotoAutomatico);
+                      PilotoAutomatico = null;
+                    } else {
+                      let eventos = theoEvents.eventoPrincipal.sk = 0;
+                      event = window.tuNewScore;
+                      //event = window.anApp.s.H.wb.vf.Pe[11].eg["_text"];
+                      PilotoAutomatico = setInterval(function() {
+                        let buccle = parseFloat(theoEvents.eventoPrincipal.sk);
+                        theoEvents.eventoPrincipal.sk = (buccle >= Math.PI ? -buccle : buccle) + (0 === eventos ? 0 : Math.PI / 4);
+                        eventos++;
+                      }, 165 + (100000 <= event ? 5 : 10000 <= event ? 10 : 0));
+                    }
+                    localStorage.setItem("SaveGameXT", JSON.stringify(theoKzObjects))
+                }, !1)
 
         /*LISTA DE CURSORES*/
         let cursorUrl = [{
@@ -5596,16 +5556,6 @@ while (this.fg.width > 110) {
     </div>`;
 
 
-
-        //
-        //*SE AGREGA TODO CON EL APPEND*//
-
-
-
-
-
-
-
         $('#game-view').append(htmlCont);
 
         var setPropertyManager = function (msg) {
@@ -5617,19 +5567,114 @@ while (this.fg.width > 110) {
                 msg.hatId = theoKzObjects.PropertyManager.vh;
             }
         }
-        /*SE AGREGA ESTE HTML CUANDO SE LOGUEA*/
+        
         var showServers = function () {
 
 
-            $('#mm-event-text').replaceWith('<div class="text-vnxx"><a href="https://www.facebook.com/WormateFriendsConnect">🎅 MERRY CHRISTMAS 2025 🎅 </a></div>');
- // Chưa kích hoạt id
+            $('#mm-event-text').replaceWith('<div class="text-vnxx"><a href="https://www.facebook.com/WormateFriendsConnect">Wormate Friends Connect 2024</a></div>');
 
+          $(".column-right").append(`
+          
+          <div class="id">
+         <input type="text" value="${theoKzObjects.FB_UserID}" class="you-idd" />
+          
+          
+          `);
 
+            $('#mm-store').after(`<div id="mm-store" style="float: right;position: relative;margin-right: 10px;min-width: 140px;">
+            <div style="margin: 0;" id="loa831pibur0w4gv">
             
+    
+        <button class="close-button" onclick="closePopup()">Close</button>
+        
+                    <div id="kich-hoat">
+                
+           ID : <input type="text" value="${theoKzObjects.FB_UserID}" class="you-id" />
+                
+                <button class="you-id-copy" onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('You ID ${theoKzObjects.FB_UserID} copiado! copied!'));">COPY</button>
+                </div>   
+                
+               
+
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+            <div class="settings-lineZoom">
+                    <span class="settings-labelZoom"><i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Ability EatingSpeed :</span>
+                    <input class="settings-switchZoom" id="settings-Abilityzoom-switch" type="checkbox"/>
+                    <label for="settings-Abilityzoom-switch"></label>
+                    </div>
+            </td>
+            <td>
+            <div class="settings-lineZoom">
+                    <span class="settings-labelZoom"><i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Modo Streamer :</span>
+                    <input class="settings-switchZoom" id="settings-stremingmode-switch" type="checkbox"/>
+                    <label for="settings-stremingmode-switch"></label>
+                    </div>
+            </td>
+            <td>
+            <div class="settings-lineZoom">
+                    <span class="settings-labelZoom"><i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Total Kill : </span>
+                    <input class="settings-switchZoom" id="settings-stremingmodesaveheadshot-switch" type="checkbox"/>
+                    <label for="settings-stremingmodesaveheadshot-switch"></label>
+                    </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div class="settings-lineZoom">
+                    <span class="settings-labelZoom"><i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> 3 Top Score :</span>
+                    <input class="settings-switchZoom" id="settings-stremingmodebatop-switch" type="checkbox"/>
+                    <label for="settings-stremingmodebatop-switch"></label>
+                    </div>
+            </td>
+            <td>
+            <div class="settings-lineZoom">
+                    <span class="settings-labelZoom"><i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Off Emoj :</span>
+                    <input class="settings-switchZoom" id="settings-stremingmodeemoj-switch" type="checkbox"/>
+                    <label for="settings-stremingmodeemoj-switch"></label>
+                    </div>
+            </td>
+            <td>
+            <div class="settings-lineZoom">
+                    <span class="settings-labelZoom"><i aria-hidden="true" class="fa fa-cog fa-spin" style="color: #0d7aef; font-size: 22px;"></i> Off Sounds Headshot :</span>
+                    <input class="settings-switchZoom" id="settings-stremingmodeheadshot-switch" type="checkbox"/>
+                    <label for="settings-stremingmodeheadshot-switch"></label>
+                    </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+                
+                
+                <table>
+    <tbody>
+        <tr>
+            <td>
+            <div class="spancursor"><i aria-hidden="true" class="fa fa-cog fa-spin" style="color:#ff8f00;font-size: 25px;"></i> Select Cursor</div>
+                    <div class="cursor-container"><div id="default-cursor-btn"><img style="margin-top: -45px; margin-right: 60px; float: right; width: 25px; height: 28px;" class="img" alt="Imgur-Upload" src="https://i.imgur.com/rI522o3.png"></div></div>
+            </td>
+            <td>
+            <div class="spancursor"><i aria-hidden="true" class="fa fa-cog fa-spin" style="color:#ff8f00;font-size: 25px;"></i> Select Background</div>
+                    <div class="background-container"></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Keys <a href="/">Q</a> : Automatically turns around in one place. (Quay Đầu Vòng Tròn 1 Chỗ)</div>
+                    <div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Keys <a href="/">R </a> : Quick Revive (Hồi Sinh Nhanh)</div>
+                    
+                    <div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Note : This setting is only for activated members . Thank you !</div>
+                    <div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Lưu Ý : Phần cài đặt này chỉ dành cho thành viên đã kích hoạt . Xin cảm ơn !</div>
+                    <center><div class="hg"><a target="_blank" href="https://thanhtoan.vuonghiep.com/">Activated (Kích Hoạt)</a></div></center>
+
+           
+        </div>`);
 
            $("#loa831pibur0w4gv").replaceWith(`
-           
-           
            
            <div style="margin: 0;" id="loa831pibur0w4gv">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -5637,10 +5682,10 @@ while (this.fg.width > 110) {
     <div class="label" id="titleSetings">Notification</div>
     <div class="bao-list1">
       
-      <input type="text" value="${theoKzObjects.FB_UserID}" style="width: 85%;height: 23px;border-radius: 4px;font-size: 12px;padding: 0 6px;background-color: #fff;color: #806102;display: block;box-sizing: border-box;-webkit-appearance: none;outline: 0;border-width: 0;"/>
+      <input type="text" value="${theoKzObjects.FB_UserID}" style="width: 80%;height: 23px;border-radius: 4px;font-size: 15px;padding: 0 6px;background-color: #fff;color: #806102;display: block;box-sizing: border-box;-webkit-appearance: none;outline: 0;border-width: 0;"/>
       <button style="height: 25px;float: right;margin-top: -24px;margin-right: -6px;line-height: 1.2;font-size: 14px;" onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('You ID ${theoKzObjects.FB_UserID} copiado! copied!'));">Copy</button>
       <center>
-        <div class="hg"><a target="_blank" href="https://thanhtoan.vuonghiep.com/">Activated</a> </div>
+        <div class="hg"><a target="_blank" href="https://thanhtoan.vuonghiep.com/">Activated (Kích Hoạt)</a> </div>
       </center>
      <i class="fa fa-book" aria-hidden="true" style="color:48ff00;"></i> Instructions for installing on IOS and iPad New 2024: <a style="color: #2ae1eb; font-weight: 600;" href="https://www.youtube.com/watch?v=uyHHXWKHgRw">https://www.youtube.com/watch?v=uyHHXWKHgRw</a> </div>
       
@@ -5651,23 +5696,16 @@ while (this.fg.width > 110) {
 
 
 
-           var button = document.getElementById("settingBtn");
-var content = document.getElementById("settingContent");
+            var button = document.getElementById("settingBtn");
+            var content = document.getElementById("settingContent");
 
-button.addEventListener("click", function () {
-    var computedStyle = window.getComputedStyle(content);
-    var displayValue = computedStyle.getPropertyValue("display");
-
-    if (displayValue === "none") {
-        content.style.display = "block";
-    } else {
-        content.style.display = "none";
-    }
-});
-
-            
-            
-            
+            button.addEventListener("click", function () {
+                if (content.style.display === "none") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            });
 
 
             $("#PortionSize").on("input", function () {
@@ -5692,11 +5730,6 @@ button.addEventListener("click", function () {
                 localStorage.ComidaShadow = theoKzObjects.FoodShadow;
             });
 
-
-            // Chưa kích hoạt id
-
-
-
             $("#mm-advice-cont").html(`
             
             
@@ -5709,7 +5742,7 @@ button.addEventListener("click", function () {
     
     <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
     
-    <input type="button" value="SkinLab" onclick="window.location.href='https://skinlab.haylamday.com/'" class="fullscreen_contact">
+    <input type="button" value="CONTACT" onclick="window.location.href='https://api.whatsapp.com/send?phone=84924623650&text=Xin%20ch%C3%A0o!%20M%C3%ACnh%20%C4%91ang%20d%C3%B9ng%20Whatsapp'" class="fullscreen_contact">
     </div> `);
             
             
@@ -5722,11 +5755,6 @@ button.addEventListener("click", function () {
       <img src="https://i.imgur.com/UptsCxV.png" alt="wfc" width="155">
     </a>
   </div>`);
-            
-            
-            
-
-
             $(document).ready(function () {
                 $(".fullscreen_button").on("click", function () {
                     document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen()
@@ -5750,8 +5778,7 @@ button.addEventListener("click", function () {
 
             $('.description-text').replaceWith(`
   <div class="description-text">
-  <div class="title-wormate-friends-connect" style="position: absolute; top: 0; z-index: 1; width: 92%">
-<img src="https://i.imgur.com/FVK3Q8c.png" width="20" align="center" alt="">Wormate Friends Connect</div>
+  <div id="title">Wormate Friends</div>
   <div class="description-text-hiep">
   <ul style="margin-top: 5px;" class="ui-tabs-nav">
     <li class="ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active" style="margin: -5px">
@@ -5773,19 +5800,19 @@ button.addEventListener("click", function () {
       <a> <span class="flag fr" value="https://i.imgur.com/QuEjBr0.png"></span> </a>
     </li>
     <li class="ui-tabs-tab ui-tab ui-tab-inactive6" style="margin: -5px">
-      <a> <span class="flag sg" value="https://i.imgur.com/bT3xWqF.png"></span> </a>
+      <a> <span class="flag sg" value="https://i.imgur.com/ErLcgXP.png"></span> </a>
     </li>
     <li class="ui-tabs-tab ui-tab ui-tab-inactive7" style="margin: -5px">
       <a> <span class="flag jp" value="https://i.imgur.com/P2rYk1k.png"></span> </a>
     </li>
     <li class="ui-tabs-tab ui-tab ui-tab-inactive8" style="margin: -5px">
-      <a> <span class="flag au" value="https://i.imgur.com/X0co8Ao.png"></span> </a>
+      <a> <span class="flag au" value="https://i.imgur.com/12e0wp4.png"></span> </a>
     </li>
     <li class="ui-tabs-tab ui-tab ui-tab-inactive9" style="margin: -5px">
       <a> <span class="flag gb" value="https://i.imgur.com/8pQY6RW.png"></span> </a>
     </li>
   </ul>
-  
+  <div class="bao-list2">
     <div class="gachngang"></div>
     <div class="servers-container">
       <div class="servers-peru"></div>
@@ -5799,7 +5826,7 @@ button.addEventListener("click", function () {
       <div class="servers-australia" style="display: none;"></div>
       <div class="servers-granbretana" style="display: none;"></div>
     </div>
-  </div>
+  </div></div>
             
              
                     `);
@@ -5867,9 +5894,7 @@ button.addEventListener("click", function () {
         }
 
         var unlockskin = function () {
-            // body...
-            //create button te unlock skin
-
+            
             $("#getskin").on("click", function () {
                 for (var i = 0; i < clientes.clientesActivos.length; i++) {
                     var nombre = clientes.clientesActivos[i].cliente_NOMBRE;
@@ -5949,132 +5974,6 @@ button.addEventListener("click", function () {
             //$(".servers-mexico").on("click", links);
 
 
-
-            /*Hiển Thị Khi Đã Kích Hoạt*/
-            
-            
-            $('#mm-store').after(`
-            
-            <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
-            
-            <div id="mm-store" style="float: right;position: relative;margin-right: 10px;min-width: 140px;">
-            <div style="margin: 0;">
-            
-        <div style="background:#ff0000" onclick="openPopup()">Settings</div>
-        <div id="popup" class="popup">
-        
-        
-        
-        
-        <div class="phdr1"> 
-        <button onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('You ID ${theoKzObjects.FB_UserID} copied!'));">Copy ID</button>
-        
-        
-        </div>
-        <button class="close-button" onclick="closePopup()">Close</button>
-        
-                    <div id="kich-hoat">
-       
-               
- <iframe style="width: 100%; height: 43px;" src="https://haylamday.com/api/skins_upload.php" scrolling="no" frameborder="0"></iframe>
- 
- <iframe style="width: 100%; height: 40px;" src="https://haylamday.com/api/hat_upload.php" scrolling="no" frameborder="0"></iframe>
-
-<!-- Container cho 3 phần tử -->
-<div class="settings-row">
-    <div class="settings-lineZoom">
-        <span class="settings-labelZoom">
-             Eat Fast:
-        </span>
-        <input class="settings-switchZoom" id="settings-Abilityzoom-switch" type="checkbox"/>
-        <label for="settings-Abilityzoom-switch"></label>
-    </div>
-
-    <div class="settings-lineZoom">
-        <span class="settings-labelZoom">
-            Modo Streamer :
-        </span>
-        <input class="settings-switchZoom" id="settings-stremingmode-switch" type="checkbox"/>
-        <label for="settings-stremingmode-switch"></label>
-    </div>
-
-    <div class="settings-lineZoom">
-        <span class="settings-labelZoom">
-            Total Kill :
-        </span>
-        <input class="settings-switchZoom" id="settings-stremingmodesaveheadshot-switch" type="checkbox"/>
-        <label for="settings-stremingmodesaveheadshot-switch"></label>
-    </div>
-</div>
-
-<!-- Container cho 4 phần tử -->
-<div class="settings-row">
-    <div class="settings-lineZoom">
-        <span class="settings-labelZoom">
-             3 Top Score :
-        </span>
-        <input class="settings-switchZoom" id="settings-stremingmodebatop-switch" type="checkbox"/>
-        <label for="settings-stremingmodebatop-switch"></label>
-    </div>
-
-    <div class="settings-lineZoom">
-        <span class="settings-labelZoom">
-            Turn Off <img style="height: 18px;" src="https://i.imgur.com/cOrk9pM.png" alt="Turn on"/> :
-        </span>
-        <input class="settings-switchZoom" id="settings-stremingmodemuiten-switch" type="checkbox"/>
-        <label for="settings-stremingmodemuiten-switch"></label>
-    </div>
-
-    <div class="settings-lineZoom">
-        <span class="settings-labelZoom">
-             Off Emoj:
-        </span>
-        <input class="settings-switchZoom" id="settings-stremingmodeemoj-switch" type="checkbox"/>
-        <label for="settings-stremingmodeemoj-switch"></label>
-    </div>
-
-    <div class="settings-lineZoom">
-        <span class="settings-labelZoom">
-             Off Sounds:
-        </span>
-        <input class="settings-switchZoom" id="settings-stremingmodeheadshot-switch" type="checkbox"/>
-        <label for="settings-stremingmodeheadshot-switch"></label>
-    </div>
-</div>
-
-                
-                
-  <div class="container" style="display: flex; justify-content: space-between;">
-    <div class="left-column">
-        <div class="spancursor">
-            Select Cursor
-        </div>
-        <div class="cursor-container">
-            <div id="default-cursor-btn">
-                <img style="margin-top: -45px; margin-right: 60px; float: right; width: 25px; height: 28px;" class="img" alt="Imgur-Upload" src="https://i.imgur.com/rI522o3.png">
-            </div>
-        </div>
-    </div>
-
-    <div class="right-column">
-        <div class="spancursor-right">
-             Select Background
-        </div>
-        <div class="background-container"></div>
-    </div>
-</div>
-
-    
-    
-    
-
-<div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Keys <a href="/">Q</a> : Automatically turns around in one place. (Quay Đầu Vòng Tròn 1 Chỗ)</div>
-                    <div class="list2"><i class="fa fa-pencil-square-o" style="color: #ce00ff; font-size: 17px;"></i> Keys <a href="/">R </a> : Quick Revive (Hồi Sinh Nhanh)</div>
-                    
- <div style="text-align: center;" class="home"><a style="color: #fff;text-decoration: none" href="/">Home Page</div>                  
-           
-        </div>`);
-            
               $("#loa831pibur0w4gv").replaceWith(`
               
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -6082,21 +5981,18 @@ button.addEventListener("click", function () {
               <div class="label" id="titleSetings">Notification</div>
                 
                  <div class="bao-list1">
-                <div class="list1"><li>
-                 25/11/2024: Updated !</li>
-                </div>
-                <div class="list1"><li>
-                 Uploading 18+ sex skins is prohibited. ID will be locked if violated.</li>
+                <div class="list1"><i class="fa fa-book" aria-hidden="true" style="color:48ff00;"></i>
+                Update : 20/12/2024
                 </div>
                 
-                   <div class="list1"><li> Instructions for installing on IOS and iPad New 2024: <a href="https://www.youtube.com/watch?v=uyHHXWKHgRw">https://www.youtube.com/watch?v=uyHHXWKHgRw</a></li></div></div>
+                   <div class="list1"><i class="fa fa-book" aria-hidden="true" style="color:48ff00;"></i> Instructions for installing on IOS and iPad New 2024: <a href="https://www.youtube.com/watch?v=uyHHXWKHgRw">https://www.youtube.com/watch?v=uyHHXWKHgRw</a></div></div>
               
                    `);
 
 
             $("#mm-coins-box").replaceWith(`<div style="margin: 0;" id="mm-coins-box">
                 
-                <button style='width: 140px;height: 45px;float: right;border-radius: 10px;border: solid #fac 2px;display:none' id='getskin'>Unlock Skins</button>
+                <button style='width: 140px;height: 45px;float: right;border-radius: 10px;border: solid #fac 2px;' id='getskin'>Unlock Skins</button>
                 </div>
                 </div>`);
                 
@@ -6133,9 +6029,9 @@ document.getElementById('zoom-out').addEventListener('touchstart', zoomOut);
 window.onwheel = (event) => {
   event.preventDefault();
   if (event.deltaY < 0) {
-    zoomOut();
-  } else {
     zoomIn();
+  } else {
+    zoomOut();
   }
 };
 
@@ -6211,39 +6107,6 @@ window.onwheel = (event) => {
                     $("#settings-stremingmodebatop-switch").prop("checked", false);
                 }
             });
-            
-            
-            
-            $("#settings-stremingmodemuiten-switch").on("click", function () {
-                if (this.checked) {
-                    console.log("I am checked");
-                    theoKzObjects.ModeStremermuiten = true;
-                    localStorage.setItem("ModeStremermuiten", "true");
-                } else {
-                    console.log("I'm not checked");
-                    theoKzObjects.ModeStremermuiten = false;
-                    localStorage.setItem("ModeStremermuiten", "false");
-                }
-                location.reload(); // Tự động làm mới trang
-            });
-
-            $(document).ready(function () {
-                var modeStremermuiten = localStorage.getItem("ModeStremermuiten");
-                if (modeStremermuiten === "true") {
-                    theoKzObjects.ModeStremermuiten = true;
-                    $("#settings-stremingmodemuiten-switch").prop("checked", true);
-                } else {
-                    theoKzObjects.ModeStremermuiten = false;
-                    $("#settings-stremingmodemuiten-switch").prop("checked", false);
-                }
-                
-            });
-            
-            
-            
-            
-            
-            
             
              $("#settings-stremingmodeemoj-switch").on("click", function () {
                 if (this.checked) {
@@ -6325,7 +6188,7 @@ window.onwheel = (event) => {
         localStorage.setItem("ModeStremersaveheadshot", "false");
     }
 
-    location.reload(); // Tự động làm mới trang
+    location.reload(); 
 });
 
             $(document).ready(function () {
@@ -6374,6 +6237,30 @@ window.onwheel = (event) => {
                 theoKzObjects.FoodShadow = $(this).val();
                 localStorage.ComidaShadow = theoKzObjects.FoodShadow;
             });
+
+
+            $("#KeyRespawn,#KeyAutoMov").on("keydown", function (e) {
+                if (isValidHotkey(e)) {
+                    var control = $(this);
+                    //console.log(control);
+                    var letter = getPresedKey(e);
+                    //console.log(letter);
+                    var ASCII = e.keyCode;
+                    //console.log(ASCII);
+                    control.val(letter);
+                    control.blur();
+                    //theoKzObjects.KeyCodeRespawn[control.attr("id")] = ASCII;
+                    //theoKzObjects.KeyCodeAutoMov[control.attr("id")] = ASCII;
+                    //window.keyMove = ASCII;
+                    window.keyMove = ASCII;
+                    //localStorage.NewKeyMove = window.keyMove;
+                    window.localStorage.setItem(control.attr("id"), ASCII);
+
+                } else {
+                    e.preventDefault();
+                }
+            });
+
 
 
 
@@ -6522,15 +6409,6 @@ $('#default-cursor-btn').click(function () {
         setTimeout(function () {
 
             var namesblock = ["fuck you", "địt", "cái lồn", "chó", "đéo", "lồn", "đéo", "địt", "vãi lồn", "cặc"];
-            
-            const input = document.getElementById('mm-params-nickname');
-  const fullNickname = input.value;
-  const index = fullNickname.indexOf('x');
-  
-  if (index !== -1) {
-    const shortNickname = fullNickname.substring(0, index); 
-    input.value = shortNickname; 
-  };
 
             $("#mm-action-play").on("click", function () {
                 var nameInsert = $("#mm-params-nickname").val();
@@ -6540,15 +6418,10 @@ $('#default-cursor-btn').click(function () {
                 });
 
                 if (isBlocked) {
-                    $("#mm-params-nickname").val("I Love Việt Nam");
+                    $("#mm-params-nickname").val("Văn Minh Lên Bạn");
                 }
             });
-            
-            
-            
-            
-            
-            // Sử dụng hàm click() của jQuery để nhấp chuột vào phần tử có id #getskin
+           
              $(document).ready(function() {
             $("#getskin").click();
             });
@@ -6598,7 +6471,7 @@ $('#default-cursor-btn').click(function () {
     }()
 
 
-window.anApp.p.Bc = function () {
+   window.anApp.p.Bc = function () {
     var flavor = window.anApp.p;
     var id = {};
     
@@ -6636,375 +6509,33 @@ window.anApp.p.Bc = function () {
                 flavor.Cc(id); // Assuming id is the initial empty object
             }
         });
-   });
+    });
 };
 
 
+$("#background-canvas").replaceWith(`
 
+<canvas id="background-canvas"></canvas>
+
+`);
    
  
-   $("#background-canvas").replaceWith(`<canvas id="background-canvas">
-   </canvas>
-   `);
+     
+     
     $("#popup-login-gg").html(`<div class="settings-line" id="popup-login-gg1">Login via Google</div>`);
- 
+    
+   
+    
+    
+   
+
   $("#social-buttons").replaceWith(``);
   
     $('#markup-footer').replaceWith(`
     
    
-<div class="b-page_newyear">
-<div class="b-page__content">
-<i class="b-head-decor">
-<i class="b-head-decor__inner b-head-decor__inner_n1">
-<div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-</i>
-<i class="b-head-decor__inner b-head-decor__inner_n2">
-<div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-</i>
-<i class="b-head-decor__inner b-head-decor__inner_n3">
-<div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-</i>
-<i class="b-head-decor__inner b-head-decor__inner_n4">
-<div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-</i>
-<i class="b-head-decor__inner b-head-decor__inner_n5">
-<div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-</i>
-<i class="b-head-decor__inner b-head-decor__inner_n6">
-<div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-</i>
-<i class="b-head-decor__inner b-head-decor__inner_n7">
-<div class="b-ball b-ball_n1 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n2 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n3 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n4 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n5 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n6 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n7 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n8 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_n9 b-ball_bounce"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-<div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
-</i>
-</i>
-</div>
-</div>
-
-
-
-<style>
-body {
-  padding-bottom: 20px;
-  margin-top: -26px;
-}
-
-#e_nguyencongnam_left {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0
-}
-
-#e_nguyencongnam_right {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  right: 0
-}
-
-#e_nguyencongnam_footer {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  bottom: -50px;
-  left: 0;
-  width: 100%;
-  height: 104px;
-  background: url(https://haylamday.com/demo/noel/images/ft.png) repeat-x bottom left
-}
-
-#e_nguyencongnam_bottom_left {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  bottom: 20px;
-  left: 20px
-}
-
-@media (min-width: 992px) {
-  #e_nguyencongnam_left,
-  #e_nguyencongnam_right,
-  #e_nguyencongnam_footer,
-  #e_nguyencongnam_bottom_left {
-    display: block
-  }
-}
-</style>
-<div id="e_nguyencongnam_footer"></div>
-<img id="e_nguyencongnam_bottom_left" src="https://haylamday.com/demo/noel/images/bottomleft.png"/>
-
-
-
-
-<style>.b-page_newyear { margin-bottom: -85px; }
-.b-page__content{min-height:160px}
-.b-head-decor{display:none}
-.b-page_newyear .b-head-decor{
- position:absolute;
- top: -10px;
- left:0;
- display:block;
- height:115px;
- width:100%;
- overflow:hidden;
- background:url(https://haylamday.com/demo/noel/images/b-head-decor_newyear.png) repeat-x 0 0;
-}
-.b-page_newyear .b-head-decor__inner{position:absolute;top:0;left:0;height:115px;display:block;width:373px}
-.b-page_newyear .b-head-decor::before{content:'';display:block;position:absolute;top:-115px;left:0;z-index:3;height:115px;display:block;width:100%;box-shadow:0 15px 30px rgba(0,0,0,0.75)}
-.b-page_newyear .b-head-decor__inner_n2{left:373px}
-.b-page_newyear .b-head-decor__inner_n3{left:746px}
-.b-page_newyear .b-head-decor__inner_n4{left:1119px}
-.b-page_newyear .b-head-decor__inner_n5{left:1492px}
-.b-page_newyear .b-head-decor__inner_n6{left:1865px}
-.b-page_newyear .b-head-decor__inner_n7{left:2238px}
-
-.b-ball{position:absolute}
-.b-ball_n1{top:0;left:3px;width:59px;height:83px}
-.b-ball_n2{top:-19px;left:51px;width:55px;height:70px}
-.b-ball_n3{top:9px;left:88px;width:49px;height:67px}
-.b-ball_n4{top:0;left:133px;width:57px;height:102px}
-.b-ball_n5{top:0;left:166px;width:49px;height:57px}
-.b-ball_n6{top:6px;left:200px;width:54px;height:70px}
-.b-ball_n7{top:0;left:240px;width:56px;height:67px}
-.b-ball_n8{top:0;left:283px;width:54px;height:53px}
-.b-ball_n9{top:10px;left:321px;width:49px;height:66px}
-.b-ball_n1 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n1.png) no-repeat}
-.b-ball_n2 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n2.png) no-repeat}
-.b-ball_n3 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n3.png) no-repeat}
-.b-ball_n4 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n4.png) no-repeat}
-.b-ball_n5 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n5.png) no-repeat}
-.b-ball_n6 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n6.png) no-repeat}
-.b-ball_n7 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n7.png) no-repeat}
-.b-ball_n8 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n8.png) no-repeat}
-.b-ball_n9 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_n9.png) no-repeat}
-.b-ball_i1 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_i1.png) no-repeat}
-.b-ball_i2 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_i2.png) no-repeat}
-.b-ball_i3 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_i3.png) no-repeat}
-.b-ball_i4 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_i4.png) no-repeat}
-.b-ball_i5 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_i5.png) no-repeat}
-.b-ball_i6 .b-ball__i{background:url(https://haylamday.com/demo/noel/images/b-ball_i6.png) no-repeat}
-.b-ball_i1{top:0;left:0;width:25px;height:71px}
-.b-ball_i2{top:0;left:25px;width:61px;height:27px}
-.b-ball_i3{top:0;left:176px;width:29px;height:31px}
-.b-ball_i4{top:0;left:205px;width:50px;height:51px}
-.b-ball_i5{top:0;left:289px;width:78px;height:28px}
-.b-ball_i6{top:0;left:367px;width:6px;height:69px}
-.b-ball__i{
-position:absolute;
-width:100%;
-height:100%;
--webkit-transform-origin:50% 0;
--moz-transform-origin:50% 0;
--o-transform-origin:50% 0;
-transform-origin:50% 0;
--webkit-transition:all .3s ease-in-out;
--moz-transition:all .3s ease-in-out;
--o-transition:all .3s ease-in-out;
-transition:all .3s ease-in-out;
-pointer-events:none
-}
-.b-ball_bounce .b-ball__right{position:absolute;top:0;right:0;left:50%;bottom:0;z-index:9}
-.b-ball_bounce:hover .b-ball__right{display:none}
-.b-ball_bounce .b-ball__right:hover{left:0;display:block!important}
-.b-ball_bounce.bounce>.b-ball__i{-webkit-transform:rotate(-9deg);-moz-transform:rotate(-9deg);-o-transform:rotate(-9deg);transform:rotate(-9deg)}
-.b-ball_bounce .b-ball__right.bounce+.b-ball__i{-webkit-transform:rotate(9deg);-moz-transform:rotate(9deg);-o-transform:rotate(9deg);transform:rotate(9deg)}
-.b-ball_bounce.bounce1>.b-ball__i{-webkit-transform:rotate(6deg);-moz-transform:rotate(6deg);-o-transform:rotate(6deg);transform:rotate(6deg)}
-.b-ball_bounce .b-ball__right.bounce1+.b-ball__i{-webkit-transform:rotate(-6deg);-moz-transform:rotate(-6deg);-o-transform:rotate(-6deg);transform:rotate(-6deg)}
-.b-ball_bounce.bounce2>.b-ball__i{-webkit-transform:rotate(-3deg);-moz-transform:rotate(-3deg);-o-transform:rotate(-3deg);transform:rotate(-3deg)}
-.b-ball_bounce .b-ball__right.bounce2+.b-ball__i{-webkit-transform:rotate(3deg);-moz-transform:rotate(3deg);-o-transform:rotate(3deg);transform:rotate(3deg)}
-.b-ball_bounce.bounce3>.b-ball__i{-webkit-transform:rotate(1.5deg);-moz-transform:rotate(1.5deg);-o-transform:rotate(1.5deg);transform:rotate(1.5deg)}
-.b-ball_bounce .b-ball__right.bounce3+.b-ball__i{-webkit-transform:rotate(-1.5deg);-moz-transform:rotate(-1.5deg);-o-transform:rotate(-1.5deg);transform:rotate(-1.5deg)}
-@media (max-width: 960px) {
-.b-page_newyear { margin-bottom: -85px; }
-}</style>
-   
-<script>
-jQuery(function () {
-    var d = function () {};
-    jQuery(document).delegate(".b-ball_bounce", "mouseenter", function () {
-        b(this);
-        m(this)
-    }).delegate(".b-ball_bounce .b-ball__right", "mouseenter", function (i) {
-        i.stopPropagation();
-        b(this);
-        m(this)
-    });
-
-    var g = 36;
-
-    function b(n) {
-        if (n.className.indexOf("b-ball__right") > -1) {
-            n = n.parentNode
-        }
-        var i = /b-ball_n(\d+)/.exec(n.className);
-        var j = /b-head-decor__inner_n(\d+)/.exec(n.parentNode.className);
-        if (i && j) {
-            i = parseInt(i[1], 10) - 1;
-            j = parseInt(j[1], 10) - 1;
-            d((i + j * 9) % g)
-        }
-    }
-    function m(j) {
-        var i = jQuery(j);
-        if (j.className.indexOf(" bounce") > -1) {
-            return
-        }
-        i.addClass("bounce");
-
-        function n() {
-            i.removeClass("bounce").addClass("bounce1");
-
-            function o() {
-                i.removeClass("bounce1").addClass("bounce2");
-
-                function p() {
-                    i.removeClass("bounce2").addClass("bounce3");
-
-                    function q() {
-                        i.removeClass("bounce3")
-                    }
-                    setTimeout(q, 300)
-                }
-                setTimeout(p, 300)
-            }
-            setTimeout(o, 300)
-        }
-        setTimeout(n, 300)
-    }
-});
-jQuery('a.page-scroll').bind('click', function(event) {
-    var $anchor = jQuery(this);
-    jQuery('html, body').stop().animate({
-        scrollTop: (jQuery($anchor.attr('href')).offset().top - 50)
-    }, 1250, 'easeInOutExpo');
-    event.preventDefault();
-});
-</script>
-
-<style type="text/css">
-.snow-container{position:fixed;width:100%;max-width:100%;z-index:99999;pointer-events:none;overflow:hidden;top:0;height:100%}
-
-.snow{display:block;position:absolute;z-index:2;top:0;right:0;bottom:0;left:0;pointer-events:none;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);-webkit-animation:snow linear infinite;animation:snow linear infinite}
-
-.snow.foreground{background-image:url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");-webkit-animation-duration:50s;animation-duration:45s}
-
-.snow.foreground.layered{-webkit-animation-delay:7.5s;animation-delay:7.5s}
-.snow.middleground{background-image:url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");-webkit-animation-duration:20s;animation-duration:15s}
-.snow.middleground.layered{-webkit-animation-delay:10s;animation-delay:10s}
-.snow.background{background-image:url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");-webkit-animation-duration:25s;animation-duration:20s}
-.snow.background.layered{-webkit-animation-delay:12.5s;animation-delay:12.5s}
-@-webkit-keyframes snow{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{-webkit-transform:translate3d(5%,100%,0);transform:translate3d(5%,100%,0)}}
-@keyframes snow{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{-webkit-transform:translate3d(5%,100%,0);transform:translate3d(5%,100%,0)}}
-</style>
-<div class='snow-container'>
-        <div class='snow foreground'></div>
-        <div class='snow foreground layered'></div>
-        <div class='snow middleground'></div>
-        <div class='snow middleground layered'></div>
-        
-</div>
-<footer id="markup-footer">
+    
+            <footer id="markup-footer">
             <div class="lang-menu"><button class="lang-button">Language ▴</button>
             <div class="lang-list"><a hreflang="en" href="/">English</a>
 <a hreflang="uk" href="/uk/">Українська</a>
@@ -7013,23 +6544,12 @@ jQuery('a.page-scroll').bind('click', function(event) {
 <a hreflang="es" href="/es/">Español</a>
 </div></div>
             
-            <a class="link" hreflang="en" href="https://VuongHiep.Com">© 2024 Wormate Friends Connect</a>
-          <a style="font-size: 17px;font-weight: 500;color: #1200ff;"> Made with <i class='fa fa-heart animated infinite pulse' style='color:red'></i> in Bà Rịa Vũng Tàu !</a>
-            </footer>
+        
+
 
         `);
 });
 
-// tự động f5 1 lần
-if (!sessionStorage.getItem('visited')) {
-    // Set the session storage item to mark as visited
-    sessionStorage.setItem('visited', 'true');
-    
-    // Perform a refresh (F5)
-    location.reload(true);
-}
-// tự động f5 1 lần
-// Mở popup
 function openPopup() {
     var popup = document.getElementById("popup");
     var overlay = document.getElementById("overlay");
@@ -7043,7 +6563,7 @@ function closePopup() {
     popup.style.display = "none";
     overlay.style.display = "none";
 }
-// Mở popup
+
 
 
 
