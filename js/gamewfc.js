@@ -2,7 +2,8 @@ var TIME = new Date().getTime();
 var linkCSS = "https://wormateserkanconnect.github.io/DV/css/custom.css?v=" + TIME;
 var linkCSS = "https://wormateserkanconnect.github.io/DV/css/game.css?v=" + TIME;
 
-var SITE_XTHOST = "https://wormateserkanconnect.github.io/DV;
+var var_weburl = "https://wormateserkanconnect.github.io/DV";
+
 window.detectLog = null;
 const _wrmxt = {
     BETAisSkinCustom(input) {
