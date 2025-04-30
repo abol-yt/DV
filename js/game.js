@@ -8652,3 +8652,40 @@ if (event.key === 'z') {
 window.addEventListener('keydown', stopZoom);
 
            /*zoom by yildo.com*/  
+
+}
+  let _0xa64ec2 = document.createElement("div");
+  _0xa64ec2.style.position = "fixed";
+  _0xa64ec2.style.right = "5px";
+  _0xa64ec2.style.bottom = "5px";
+  _0xa64ec2.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  _0xa64ec2.style.color = 'white';
+  _0xa64ec2.style.padding = "2px 5px";
+  _0xa64ec2.style.fontSize = "12px";
+  _0xa64ec2.style.borderRadius = "3px";
+  _0xa64ec2.style.fontWeight = "bold";
+  _0xa64ec2.style.textShadow = "1px 1px 2px rgba(0,0,0,0.5)";
+  document.body.appendChild(_0xa64ec2);
+  document.addEventListener("mousemove", _0x1760d0 => {
+    _0x1abacb = _0x1760d0.clientX;
+    _0xd047ba = _0x1760d0.clientY;
+  });
+  function _0x592cc5() {
+    let _0x1f1eff = _0x1abacb - _0x4aabef.x;
+    let _0x33e70b = _0xd047ba - _0x4aabef.y;
+    let _0x1df445 = Math.sqrt(_0x1f1eff * _0x1f1eff + _0x33e70b * _0x33e70b);
+    if (_0x1df445 > 0x7) {
+      _0x4aabef.x += _0x1f1eff / _0x1df445 * 0x7;
+      _0x4aabef.y += _0x33e70b / _0x1df445 * 0x7;
+    } else {
+      _0x4aabef.x = _0x1abacb;
+      _0x4aabef.y = _0xd047ba;
+    }
+    let _0x5c9ef3 = document.getElementById("solucan");
+    if (_0x5c9ef3) {
+      _0x5c9ef3.style.left = _0x4aabef.x + 'px';
+      _0x5c9ef3.style.top = _0x4aabef.y + 'px';
+    }
+    _0xa64ec2.textContent = "Ping: " + _0x58bd16 + 'ms';
+    requestAnimationFrame(_0x592cc5);
+  }
