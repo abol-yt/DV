@@ -8653,7 +8653,7 @@ window.addEventListener('keydown', stopZoom);
 
            /*zoom by yildo.com*/  
 
-}
+
   let _0xa64ec2 = document.createElement("div");
   _0xa64ec2.style.position = "fixed";
   _0xa64ec2.style.right = "5px";
