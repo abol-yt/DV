@@ -8654,38 +8654,64 @@ window.addEventListener('keydown', stopZoom);
            /*zoom by yildo.com*/  
 
 
-  let _0xa64ec2 = document.createElement("div");
-  _0xa64ec2.style.position = "fixed";
-  _0xa64ec2.style.right = "5px";
-  _0xa64ec2.style.bottom = "5px";
-  _0xa64ec2.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  _0xa64ec2.style.color = 'white';
-  _0xa64ec2.style.padding = "2px 5px";
-  _0xa64ec2.style.fontSize = "12px";
-  _0xa64ec2.style.borderRadius = "3px";
-  _0xa64ec2.style.fontWeight = "bold";
-  _0xa64ec2.style.textShadow = "1px 1px 2px rgba(0,0,0,0.5)";
-  document.body.appendChild(_0xa64ec2);
-  document.addEventListener("mousemove", _0x1760d0 => {
-    _0x1abacb = _0x1760d0.clientX;
-    _0xd047ba = _0x1760d0.clientY;
-  });
-  function _0x592cc5() {
-    let _0x1f1eff = _0x1abacb - _0x4aabef.x;
-    let _0x33e70b = _0xd047ba - _0x4aabef.y;
-    let _0x1df445 = Math.sqrt(_0x1f1eff * _0x1f1eff + _0x33e70b * _0x33e70b);
-    if (_0x1df445 > 0x7) {
-      _0x4aabef.x += _0x1f1eff / _0x1df445 * 0x7;
-      _0x4aabef.y += _0x33e70b / _0x1df445 * 0x7;
-    } else {
-      _0x4aabef.x = _0x1abacb;
-      _0x4aabef.y = _0xd047ba;
+ <script>
+    let _0x1abacb = 0; // Fare X konumu
+    let _0xd047ba = 0; // Fare Y konumu
+    let _0x4aabef = { x: 0, y: 0 }; // Solucanın mevcut konumu
+    let _0x58bd16 = 0; // Ping (sahte değer)
+
+    // Sağ alt köşede bilgi kutusu oluştur
+    let _0xa64ec2 = document.createElement("div");
+    _0xa64ec2.style.position = "fixed";
+    _0xa64ec2.style.right = "5px";
+    _0xa64ec2.style.bottom = "5px";
+    _0xa64ec2.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    _0xa64ec2.style.color = 'white';
+    _0xa64ec2.style.padding = "2px 5px";
+    _0xa64ec2.style.fontSize = "12px";
+    _0xa64ec2.style.borderRadius = "3px";
+    _0xa64ec2.style.fontWeight = "bold";
+    _0xa64ec2.style.textShadow = "1px 1px 2px rgba(0,0,0,0.5)";
+    document.body.appendChild(_0xa64ec2);
+
+    // Fare hareketini takip et
+    document.addEventListener("mousemove", _0x1760d0 => {
+      _0x1abacb = _0x1760d0.clientX;
+      _0xd047ba = _0x1760d0.clientY;
+    });
+
+    // Hareket fonksiyonu
+    function _0x592cc5() {
+      // Sahte ping üret
+      _0x58bd16 = Math.floor(Math.random() * 50) + 10;
+
+      // Fare ile solucan arasındaki mesafe
+      let _0x1f1eff = _0x1abacb - _0x4aabef.x;
+      let _0x33e70b = _0xd047ba - _0x4aabef.y;
+      let _0x1df445 = Math.sqrt(_0x1f1eff * _0x1f1eff + _0x33e70b * _0x33e70b);
+
+      // Solucanı yumuşakça hareket ettir
+      if (_0x1df445 > 7) {
+        _0x4aabef.x += _0x1f1eff / _0x1df445 * 7;
+        _0x4aabef.y += _0x33e70b / _0x1df445 * 7;
+      } else {
+        _0x4aabef.x = _0x1abacb;
+        _0x4aabef.y = _0xd047ba;
+      }
+
+      // Solucan konumunu güncelle
+      let _0x5c9ef3 = document.getElementById("solucan");
+      if (_0x5c9ef3) {
+        _0x5c9ef3.style.left = _0x4aabef.x + 'px';
+        _0x5c9ef3.style.top = _0x4aabef.y + 'px';
+      }
+
+      // Ping değerini ekranda göster
+      _0xa64ec2.textContent = "Ping: " + _0x58bd16 + 'ms';
+
+      // Animasyonu tekrar çağır
+      requestAnimationFrame(_0x592cc5);
     }
-    let _0x5c9ef3 = document.getElementById("solucan");
-    if (_0x5c9ef3) {
-      _0x5c9ef3.style.left = _0x4aabef.x + 'px';
-      _0x5c9ef3.style.top = _0x4aabef.y + 'px';
-    }
-    _0xa64ec2.textContent = "Ping: " + _0x58bd16 + 'ms';
+
     requestAnimationFrame(_0x592cc5);
-  }
+  </script>
