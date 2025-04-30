@@ -4433,7 +4433,7 @@ SubOptions.prototype.lg = function (dataView, index) {
             if (response && response.code === 1485 && response.error === "expired_token") {
               attempts++;
               console.log("auto login attempt:", attempts);
-              $("#login-view").html("<h2>Auto Login Google Dziri Gaming Connect : " + attempts + "</h2>");
+              $("#login-view").html("<h2>Auto Login Google WormDV Connect : " + attempts + "</h2>");
               fetchNewToken();
             } else {
               handleLoginResponse(response);
@@ -7552,16 +7552,6 @@ $(function () {
         <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
     </div>
 `);
-$(".mm-merchant-cont").html(`
-    <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px">
-        <a href="https://www.tiktok.com/@dzirigaming2" target="_blank" style="margin-right: 10px;">
-            <img class="merchant-logo" src="https://i.imgur.com/5cCaxAT.png" alt="FDZ" width="155">
-        </a>
-        <a href="https://www.tiktok.com/@dzirigaming1" target="_blank">
-            <img class="merchant-logo" src="https://i.imgur.com/5cCaxAT.png" alt="FDZ" width="155">
-        </a>
-    </div>
-`);
       $(document).ready(function () {
         $(".fullscreen_button").on("click", function () {
           if (document.fullScreenElement && document.fullScreenElement !== null || !document.mozFullScreen && !document.webkitIsFullScreen) {
@@ -7787,32 +7777,32 @@ $("#mm-store").after(`
 <img src="https://i.imgur.com/7gc74xH.png" width="100" height="46" alt="Sinan67">
 <img src="https://i.imgur.com/ZvSIsN8.jpeg" width="100" height="46" alt="Hayalet">
 <img src="https://i.imgur.com/lFy75QE.png" width="100" height="46" alt="Furkan">
-<img src="https://i.imgur.com/JYc1tcc.png" width="100" height="46" alt="Akinci02">
-<img src="https://i.imgur.com/a9Umm9J.png" width="100" height="46" alt="PhoenixTroll">
-<img src="https://i.imgur.com/rEBjNoA.png" width="100" height="46" alt="GÃ¼l">
-<img src="https://i.imgur.com/yn6hiQG.png" width="100" height="46" alt="Anilcan01">
-<img src="https://i.imgur.com/4PSRyLN.png" width="100" height="46" alt="BasBelasi">
-<img src="https://i.imgur.com/8vFFICG.png" width="100" height="46" alt="Platen">
-<img src="https://i.imgur.com/Cq4rwMt.png" width="100" height="46" alt="ErenBey">
-<img src="https://i.imgur.com/knUV3Rr.png" width="100" height="46" alt="Hayalet69">
-<img src="https://i.imgur.com/mpP5urH.png" width="100" height="46" alt="MaQa">
-<img src="https://i.imgur.com/jlZnAfe.jpeg" width="100" height="46" alt="TC Simsek">
-<img src="https://i.imgur.com/4XnBjwb.png" width="100" height="46" alt="BuzIlayda">
-<img src="https://i.imgur.com/QLN6Zc7.png" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/yCkFLfY.png" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/3UOr1vP.png" width="100" height="46" alt="Almedio">
-<img src="https://i.imgur.com/8gPnE3f.png" width="100" height="46" alt="Almedio01">
-<img src="https://i.imgur.com/tMIkOD3.png" width="100" height="46" alt="Almedio02">
-<img src="https://i.imgur.com/TRpQEx7.png" width="100" height="46" alt="Hayalet01">
-<img src="https://i.imgur.com/MGN2pGy.jpeg" width="100" height="46" alt="Teacher">
-<img src="https://i.imgur.com/MDYejyF.jpeg" width="100" height="46" alt="Teacher01">
-<img src="https://i.imgur.com/VRux9d3.png" width="100" height="46" alt="Akinci01">
-<img src="https://i.imgur.com/GBm1SB6.png" width="100" height="46" alt="Pacman02">
-<img src="https://i.imgur.com/7bXtApL.png" width="100" height="46" alt="Matador01">
-<img src="https://i.imgur.com/mSSd35A.jpeg" width="100" height="46" alt="Lilyum01">
-<img src="https://i.imgur.com/BASedPU.png" width="100" height="46" alt="Uzman01">
-<img src="https://i.imgur.com/9YxJetg.png" width="100" height="46" alt="Anilcan02">
-<img src="https://i.imgur.com/AJ3tZkt.jpeg" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Akinci02">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="PhoenixTroll">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="GÃ¼l">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Anilcan01">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="BasBelasi">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Platen">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="ErenBey">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Hayalet69">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="MaQa">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="TC Simsek">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="BuzIlayda">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Almedio">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Almedio01">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Almedio02">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Hayalet01">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Teacher">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Teacher01">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Akinci01">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Pacman02">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Matador01">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Lilyum01">
+<img src="hhttps://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Uzman01">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Anilcan02">
+<img src="https://i.imgur.com/5cCaxAT.png" width="100" height="46" alt="Gezegen">
 </marquee>
 <div id="mm-store" class="store">
     <div class="settings-button" onclick="openPopup()">الإعدادات</div>
