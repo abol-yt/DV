@@ -7514,7 +7514,7 @@ $(function () {
       }
     }
     function handleUserData() {
-      $("#mm-event-text").replaceWith("<div class=\"text-FDZ\">جيش الأفناك قوة الروح لا تنتهي</div>");
+      $("#mm-event-text").replaceWith("<div class=\"text-FDZ\"> ❤️ Love you WormDV Connect ❤️</div>");
       var settingButton = document.getElementById("settingBtn");
       var settingContent = document.getElementById("settingContent");
       settingButton.addEventListener("click", function () {
