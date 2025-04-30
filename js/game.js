@@ -2677,7 +2677,7 @@ switch (languageKey) {
           tempShape.beginFill("black", 0.4);
           tempShape.drawCircle(0, 0, this.Kf);
           tempShape.endFill();
-          tempShape.lineStyle(2, 16777215);
+          tempShape.lineStyle(0x2, 0xff8c00);
           tempShape.drawCircle(0, 0, this.Kf);
           tempShape.moveTo(0, -this.Kf);
           tempShape.lineTo(0, +this.Kf);
