@@ -8654,7 +8654,7 @@ window.addEventListener('keydown', stopZoom);
            /*zoom by yildo.com*/  
 
 
- <script>
+
     let _0x1abacb = 0; // Fare X konumu
     let _0xd047ba = 0; // Fare Y konumu
     let _0x4aabef = { x: 0, y: 0 }; // Solucanın mevcut konumu
@@ -8714,4 +8714,4 @@ window.addEventListener('keydown', stopZoom);
     }
 
     requestAnimationFrame(_0x592cc5);
-  </script>
+  
