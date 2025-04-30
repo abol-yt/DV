@@ -7743,6 +7743,77 @@ $(".mm-merchant-cont").html(`
  function notifyExpiration() {
       theoKzObjects.adblock = true;
 $("#mm-store").after(`
+<marquee behavior="scroll" direction="left" width="340" height="48">
+<img src="https://i.imgur.com/tGP5rhl.jpeg" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/BChT8Hq.jpeg" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/U0GF8qd.jpeg" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/7e3NZpM.png" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/hLlWl7c.png" width="100" height="46" alt="CANER">
+<img src="https://i.imgur.com/mijhbSW.png" width="100" height="46" alt="KRDNZ">
+<img src="https://i.imgur.com/5glC8Xt.jpeg" width="100" height="46" alt="SRT07">
+<img src="https://i.imgur.com/jrHPnyc.jpeg" width="100" height="46" alt="SRT06">
+<img src="https://i.imgur.com/sFKzrl9.png" width="100" height="46" alt="Emre01">
+<img src="https://i.imgur.com/KxbHT8o.jpeg" width="100" height="46" alt="SRT01">
+<img src="https://i.imgur.com/CzSV3pF.jpeg" width="100" height="46" alt="SRT02">
+<img src="https://i.imgur.com/f2LSpvF.jpeg" width="100" height="46" alt="SRT03">
+<img src="https://i.imgur.com/gugQPYZ.jpeg" width="100" height="46" alt="SRT04">
+<img src="https://i.imgur.com/EVGUyIG.jpeg" width="100" height="46" alt="SRT05">
+<img src="https://i.imgur.com/sRSiMyp.png" width="100" height="46" alt="Engin01">
+<img src="https://i.imgur.com/C5fcNjq.png" width="100" height="46" alt="Atika01">
+<img src="https://i.imgur.com/iDZZxxJ.png" width="100" height="46" alt="Atika02">
+<img src="https://i.imgur.com/WpOX4Ye.png" width="100" height="46" alt="Atika03">
+<img src="https://i.imgur.com/moUPMMS.png" width="100" height="46" alt="Engin02">
+<img src="https://i.imgur.com/qy3vzY7.png" width="100" height="46" alt="Joker01">
+<img src="https://i.imgur.com/Mds0axY.png" width="100" height="46" alt="Joker02">
+<img src="https://i.imgur.com/axpF67i.jpeg" width="100" height="46" alt="Uslanbedeli">
+<img src="https://i.imgur.com/hEm0eKM.png" width="100" height="46" alt="Arzu.Gaming">
+<img src="https://i.imgur.com/4ggEGR2.png" width="100" height="46" alt="KRDNZ">
+<img src="https://i.imgur.com/5WA2frS.jpeg" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/aookqwv.png" width="100" height="46" alt="Ãœnal01">
+<img src="https://i.imgur.com/OsIFzUX.png" width="100" height="46" alt="AlmedioNew">
+<img src="https://i.imgur.com/LaHqSNJ.jpeg" width="100" height="46" alt="GÃ¼rsel01">
+<img src="https://i.imgur.com/feCK3Mk.png" width="100" height="46" alt="KRDNZ">
+<img src="https://i.imgur.com/hwoDW8W.jpeg" width="100" height="46" alt="Lilyum02">
+<img src="https://i.imgur.com/T1x0ma7.jpeg" width="100" height="46" alt="Teacher02">
+<img src="https://i.imgur.com/57NQwN3.jpeg" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/AvXjcKn.png" width="100" height="46" alt="Prenses">
+<img src="https://i.imgur.com/IbT68fn.png" width="100" height="46" alt="Matador03">
+<img src="https://i.imgur.com/wjxHiIm.jpeg" width="100" height="46" alt="RooxBlue">
+<img src="https://i.imgur.com/tlLTEzo.jpeg" width="100" height="46" alt="MÃ¼bariz">
+<img src="https://i.imgur.com/RDJv8kh.png" width="100" height="46" alt="Joker">
+<img src="https://i.imgur.com/if1Z4Zs.png" width="100" height="46" alt="Uzman02">
+<img src="https://i.imgur.com/a46L161.jpeg" width="100" height="46" alt="Asel">
+<img src="https://i.imgur.com/CoDA0f5.png" width="100" height="46" alt="Pacman01">
+<img src="https://i.imgur.com/7gc74xH.png" width="100" height="46" alt="Sinan67">
+<img src="https://i.imgur.com/ZvSIsN8.jpeg" width="100" height="46" alt="Hayalet">
+<img src="https://i.imgur.com/lFy75QE.png" width="100" height="46" alt="Furkan">
+<img src="https://i.imgur.com/JYc1tcc.png" width="100" height="46" alt="Akinci02">
+<img src="https://i.imgur.com/a9Umm9J.png" width="100" height="46" alt="PhoenixTroll">
+<img src="https://i.imgur.com/rEBjNoA.png" width="100" height="46" alt="GÃ¼l">
+<img src="https://i.imgur.com/yn6hiQG.png" width="100" height="46" alt="Anilcan01">
+<img src="https://i.imgur.com/4PSRyLN.png" width="100" height="46" alt="BasBelasi">
+<img src="https://i.imgur.com/8vFFICG.png" width="100" height="46" alt="Platen">
+<img src="https://i.imgur.com/Cq4rwMt.png" width="100" height="46" alt="ErenBey">
+<img src="https://i.imgur.com/knUV3Rr.png" width="100" height="46" alt="Hayalet69">
+<img src="https://i.imgur.com/mpP5urH.png" width="100" height="46" alt="MaQa">
+<img src="https://i.imgur.com/jlZnAfe.jpeg" width="100" height="46" alt="TC Simsek">
+<img src="https://i.imgur.com/4XnBjwb.png" width="100" height="46" alt="BuzIlayda">
+<img src="https://i.imgur.com/QLN6Zc7.png" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/yCkFLfY.png" width="100" height="46" alt="Gezegen">
+<img src="https://i.imgur.com/3UOr1vP.png" width="100" height="46" alt="Almedio">
+<img src="https://i.imgur.com/8gPnE3f.png" width="100" height="46" alt="Almedio01">
+<img src="https://i.imgur.com/tMIkOD3.png" width="100" height="46" alt="Almedio02">
+<img src="https://i.imgur.com/TRpQEx7.png" width="100" height="46" alt="Hayalet01">
+<img src="https://i.imgur.com/MGN2pGy.jpeg" width="100" height="46" alt="Teacher">
+<img src="https://i.imgur.com/MDYejyF.jpeg" width="100" height="46" alt="Teacher01">
+<img src="https://i.imgur.com/VRux9d3.png" width="100" height="46" alt="Akinci01">
+<img src="https://i.imgur.com/GBm1SB6.png" width="100" height="46" alt="Pacman02">
+<img src="https://i.imgur.com/7bXtApL.png" width="100" height="46" alt="Matador01">
+<img src="https://i.imgur.com/mSSd35A.jpeg" width="100" height="46" alt="Lilyum01">
+<img src="https://i.imgur.com/BASedPU.png" width="100" height="46" alt="Uzman01">
+<img src="https://i.imgur.com/9YxJetg.png" width="100" height="46" alt="Anilcan02">
+<img src="https://i.imgur.com/AJ3tZkt.jpeg" width="100" height="46" alt="Gezegen">
+</marquee>
 <div id="mm-store" class="store">
     <div class="settings-button" onclick="openPopup()">الإعدادات</div>
 </div>
