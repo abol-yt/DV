@@ -1418,9 +1418,9 @@
   },
   {
     "id": 9,
-    "name": "09. 尺oo乂 Bordo<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
+    "name": "09.DE_19 TMW<img class='team' src='https://wormatefriendsturkey.com/images/team/wfc3.png'/>",
     "region": "peru",
-    "serverUrl": "wss://fra-c.wormate.io:30265/wormy",
+    "serverUrl": "wss://fra-c.wormate.io:30140/wormy",
     "status": 1
   },
   {
