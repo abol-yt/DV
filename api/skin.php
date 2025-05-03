@@ -11206,15 +11206,15 @@
         "25ypg_03_0"
       ],
       "glow": [
-        "a_death",
-        "a_ivory",
-        "a_ivory",
-        "a_death",
-        "a_ivory",
-        "a_ivory",
-        "a_death",
-        "a_ivory",
-        "a_ivory"
+        "a_grass",
+        "a_grass",
+        "a_grass",
+        "a_grass",
+        "a_grass",
+        "a_grass",
+        "a_grass",
+        "a_grass",
+        "a_grass"
       ]
     },
     {
