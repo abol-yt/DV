@@ -1521,7 +1521,7 @@ switch (languageKey) {
       VelocityConstructor.VELOCITY_TYPE = 0;
       VelocityConstructor.FLEXIBLE_TYPE = 1;
       VelocityConstructor.MAGNETIC_TYPE = 2;
-      VelocityConstructor.ZOOM_TYPE = 3;
+      VelocityConstructor.ZOOM_TYPE = 1;
       VelocityConstructor.X2_TYPE = 3;
       VelocityConstructor.X5_TYPE = 4;
       VelocityConstructor.X10_TYPE = 5;
