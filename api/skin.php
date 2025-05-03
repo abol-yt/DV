@@ -11206,15 +11206,15 @@
         "25ypg_03_0"
       ],
       "glow": [
-        "a_white",
-        "a_white",
-        "a_white",
-        "a_white",
-        "a_white",
-        "a_white",
-        "a_white",
-        "a_white",
-        "a_white"
+        "a_death",
+        "a_ivory",
+        "a_ivory",
+        "a_death",
+        "a_ivory",
+        "a_ivory",
+        "a_death",
+        "a_ivory",
+        "a_ivory"
       ]
     },
     {
@@ -13876,15 +13876,15 @@
         "101gaming_01_0"
       ],
       "glow": [
-        "a__prpl",
-        "a__prpl",
-        "a__prpl",
-        "a__prpl",
-        "a__prpl",
-        "a__prpl",
-        "a___vio",
-        "a__prpl",
-        "a__prpl"
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white",
+        "a_white"
       ]
     },
     {
@@ -17096,7 +17096,8 @@
       },
       "list": [
         "1121",
-        "1200"
+        "1200",
+        "1201"
       ]
     },
     {
@@ -17433,14 +17434,16 @@
         "1174",
         "1175",
         "1176",
-        "1017"
+        "1017",
+        "1041",
+        "1064"
       ]
     },
     {
       "isCustom": true,
       "id": "Forder",
       "name": {
-        "en": "Extension By ᕲᐺ•ƤԼƛƬЄƝ"
+        "en": "DV-PLATEN"
       },
       "list": [
         "1269",
@@ -18556,7 +18559,7 @@
     },
     "25ypg_03": {
       "custom": true,
-      "relativePath": "https://i.imgur.com/WfEEsl2.png"
+      "relativePath": "https://i.imgur.com/Bfxdrss.png"
     },
     "25ypg_04": {
       "custom": true,
@@ -18916,11 +18919,11 @@
     },
     "101gaming_01": {
       "custom": true,
-      "relativePath": "https://haylamday.com/images/texture/skin_101gaming/skin_101gaming_01.png"
+      "relativePath": "https://i.imgur.com/p4PjfYI.png"
     },
     "101gaming_02": {
       "custom": true,
-      "relativePath": "https://haylamday.com/images/texture/skin_101gaming/skin_101gaming_02.png"
+      "relativePath": "https://i.imgur.com/Ennw9pX.png"
     },
     "101gaming_03": {
       "custom": true,
