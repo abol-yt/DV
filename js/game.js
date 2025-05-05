@@ -6920,4 +6920,3 @@ if (event.key === 'z') {
 window.addEventListener('keydown', stopZoom);
 
            /*zoom by DV-PLATEN*/ 
-console.log("DV-PALTEN Z KEY UPDATE");
