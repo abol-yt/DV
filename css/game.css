@@ -6,10 +6,6 @@
    font-family: 'HelveticaNeueLT', sans-serif;
 }
 
-.text-vnxx {}
-
-a {}
-
 .servers-container {margin-top: 26px;}
 
 .img-team img {
@@ -926,8 +922,8 @@ img {}
 }
 
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-middle #mm-menu-cont #mm-advice-cont {
-    height: 122px;
-    line-height: 53px;
+    height: 50px;
+    line-height: 50px;
     margin-top: 10px;
     overflow: hidden;
     position: relative;
@@ -4320,21 +4316,18 @@ button:hover {
 
 .phdr1,
 .home {
-    /* background: #26c6da; */
+    background: #26c6da;
     border-bottom: 1px solid #dbdbdb;
     box-shadow: 0 1px 2px #d3d3d3;
     color: #fff;
     display: block;
     font-size: 20px;
     font-weight: bold;
-    height: 50px;
+    height: 40px;
     line-height: 1.9;
     padding-left: 10px;
-    /* text-align: left; */
+    text-align: left;
     text-transform: uppercase;
-    width: 71px;
-    float: right;
-    text-align: center;
 }
 
 .hg {
@@ -4737,21 +4730,15 @@ c {}
 }
 
 .close-button {
-    /* background: #26c6da; */
-    /* border: 1px solid #f1f1e7; */
-    /* color: white; */
-    /* font-weight: bold; */
-    /* cursor: pointer; */
-    /* border-radius: 5px; */
-    /* display: inline-block; */
+    background: #26c6da;
+    border: 1px solid #f1f1e7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
     padding: 10px 20px;
-    /* text-align: center; */
-    /* background-repeat: no-repeat; */
-    transform: scale(-1, 1);
-    background: url(https://i.imgur.com/bM49y0C.png);
-    height: 12px;
-    width: 0px;
-    background-repeat: no-repeat;
+    text-align: center;
 }
 
 .user-id-display {
@@ -4784,7 +4771,7 @@ div#kich-hoat {
 }
 
 .settings-lineZoom {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     align-items: center;
     color: #000;
@@ -4801,7 +4788,7 @@ div#kich-hoat {
 }
 
 .settings-labelZoom {
-    margin-right: 11px;
+    margin-right: 10px;
 }
 
 .left-column,
@@ -4974,7 +4961,6 @@ button#buy-premium {
 
 .background-container {
     height: 100px;
-    padding: 16px;
 }
 
 .background-container img {
@@ -4982,7 +4968,6 @@ button#buy-premium {
     height: 40px;
     margin: 1px;
     width: 70px;
-    padding: 0px;
 }
 
 .selectSala {
