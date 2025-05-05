@@ -6,6 +6,70 @@
    font-family: 'HelveticaNeueLT', sans-serif;
 }
 
+.servers-container {margin-top: 26px;}
+
+.img-team img {
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.offline {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: none;
+}
+
+.valu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ten {
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+div#svhiep {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* width: 26%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+div#mapsv {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: revert-layer; */
+    /* width: 100%; */
+    /* color: #efbf07; */
+    /* font-weight: bold; */
+    /* background: #3b3b50; */
+    /* text-transform: capitalize; */
+    /* height: 26px; */
+    /* line-height: 38px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #efbf07;
+    font-weight: bold;
+    background: #3b3b50;
+    text-transform: uppercase;
+}
+
 body,
 html {
     background-color: #d5d2db;
@@ -483,7 +547,7 @@ body {
 }
 
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-left .description-text * {
-    font-size: 12px;
+    font-size: 9px;
 }
 
 img {}
@@ -4786,6 +4850,10 @@ div#kich-hoat {
     margin-top: -15px;
 }
 
+.gachngang {
+    border-bottom: solid 2px #ab0dc7;
+}
+
 .container {
     display: flex;
     float: right;
@@ -4903,16 +4971,25 @@ button#buy-premium {
 }
 
 .selectSala {
+    /* border-bottom: 1px solid #fff; */
+    /* color: #fff; */
+    /* font-weight: 700; */
+    /* justify-content: center; */
+    /* margin: 1px; */
+    /* padding: 4.5px; */
+    /* text-decoration: none; */
+    /* text-shadow: 0 0 0.2em #000000; */
+    /* text-transform: uppercase; */
+    /* transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; */
     border-bottom: 1px solid #fff;
-    color: #fff;
-    font-weight: 700;
-    justify-content: center;
     margin: 1px;
-    padding: 4.5px;
-    text-decoration: none;
-    text-shadow: 0 0 0.2em #000000;
     text-transform: uppercase;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    justify-content: space-evenly;
+    text-shadow: 0 0 0 #2f882e, 0 0 0.5em #ff0000, 0 0 0.4em #ff0000;
+    transition: all 0.3s ease-in-out;
 }
 
 .selectSala:hover {
