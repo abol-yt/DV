@@ -6,6 +6,10 @@
    font-family: 'HelveticaNeueLT', sans-serif;
 }
 
+.text-vnxx {}
+
+a {}
+
 .servers-container {margin-top: 26px;}
 
 .img-team img {
@@ -922,8 +926,8 @@ img {}
 }
 
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-middle #mm-menu-cont #mm-advice-cont {
-    height: 50px;
-    line-height: 50px;
+    height: 122px;
+    line-height: 53px;
     margin-top: 10px;
     overflow: hidden;
     position: relative;
