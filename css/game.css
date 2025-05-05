@@ -4320,18 +4320,21 @@ button:hover {
 
 .phdr1,
 .home {
-    background: #26c6da;
+    /* background: #26c6da; */
     border-bottom: 1px solid #dbdbdb;
     box-shadow: 0 1px 2px #d3d3d3;
     color: #fff;
     display: block;
     font-size: 20px;
     font-weight: bold;
-    height: 40px;
+    height: 50px;
     line-height: 1.9;
     padding-left: 10px;
-    text-align: left;
+    /* text-align: left; */
     text-transform: uppercase;
+    width: 71px;
+    float: right;
+    text-align: center;
 }
 
 .hg {
@@ -4734,15 +4737,21 @@ c {}
 }
 
 .close-button {
-    background: #26c6da;
-    border: 1px solid #f1f1e7;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    display: inline-block;
+    /* background: #26c6da; */
+    /* border: 1px solid #f1f1e7; */
+    /* color: white; */
+    /* font-weight: bold; */
+    /* cursor: pointer; */
+    /* border-radius: 5px; */
+    /* display: inline-block; */
     padding: 10px 20px;
-    text-align: center;
+    /* text-align: center; */
+    /* background-repeat: no-repeat; */
+    transform: scale(-1, 1);
+    background: url(https://i.imgur.com/bM49y0C.png);
+    height: 12px;
+    width: 0px;
+    background-repeat: no-repeat;
 }
 
 .user-id-display {
@@ -4775,7 +4784,7 @@ div#kich-hoat {
 }
 
 .settings-lineZoom {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     align-items: center;
     color: #000;
@@ -4792,7 +4801,7 @@ div#kich-hoat {
 }
 
 .settings-labelZoom {
-    margin-right: 10px;
+    margin-right: 11px;
 }
 
 .left-column,
@@ -4965,6 +4974,7 @@ button#buy-premium {
 
 .background-container {
     height: 100px;
+    padding: 16px;
 }
 
 .background-container img {
@@ -4972,6 +4982,7 @@ button#buy-premium {
     height: 40px;
     margin: 1px;
     width: 70px;
+    padding: 0px;
 }
 
 .selectSala {
