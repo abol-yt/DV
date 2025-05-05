@@ -436,28 +436,28 @@
         },
         {
             "id": 473,
-            "name": "<div id='svhiep'> <div class='ten'>04. UAE - WFC</div> <div class='valu'>Map: UAE_4</div> <div class='offline'>OFF</div> <div class='img-team'> <img src='https://haylamday.com/images/team/wfc.png'/> </div> </div>",
+            "name": "<div id='svhiep'> <div class='ten'>04.IRAQ</div> <div class='valu'>Map: IQ_4</div> <div class='offline'>OFF</div> <div class='img-team'> <img src='https://haylamday.com/images/team/wfc.png'/> </div> </div>",
             "region": "mexico",
             "serverUrl": "wss://dxb-a.wormate.io:31353/wormy",
             "status": 1
         },
         {
             "id": 473,
-            "name": "<div id='svhiep'> <div class='ten'>03. SAG - Ali Gaming </div> <div class='valu'>Map: UAE_3</div> <div class='offline'>OFF</div> <div class='img-team'> <img src='https://haylamday.com/images/team/aligaming.JPG'/> </div> </div>",
+            "name": "<div id='svhiep'> <div class='ten'>03.IRAQ </div> <div class='valu'>Map: IQ_3</div> <div class='offline'>OFF</div> <div class='img-team'> <img src='https://haylamday.com/images/team/aligaming.JPG'/> </div> </div>",
             "region": "mexico",
             "serverUrl": "wss://dxb-a.wormate.io:32703/wormy",
             "status": 1
         },
         {
             "id": 472,
-            "name": "<div id='svhiep'> <div class='ten'>02. FIRE@YT\ud83d\udd25 </div> <div class='valu'>Map: UAE_2</div> <div class='online'>ON</div> <div class='img-team'> <img src='https://haylamday.com/images/team/fire.JPG'/> </div> </div>",
+            "name": "<div id='svhiep'> <div class='ten'>02.IRAQ </div> <div class='valu'>Map: IQ_2</div> <div class='online'>ON</div> <div class='img-team'> <img src='https://haylamday.com/images/team/fire.JPG'/> </div> </div>",
             "region": "mexico",
             "serverUrl": "wss://dxb-a.wormate.io:31975/wormy",
             "status": 1
         },
         {
             "id": 470,
-            "name": "<div id='svhiep'> <div class='ten'>01.\ud83d\udd34 YT Nona Milano</div> <div class='valu'>Map: UAE_1</div> <div class='offline'>OFF</div> <div class='img-team'> <img src='https://i.imgur.com/RQTKt8G.jpeg'/> </div> </div>",
+            "name": "<div id='svhiep'> <div class='ten'>01.IRAQ</div> <div class='valu'>Map: IQ_1</div> <div class='offline'>OFF</div> <div class='img-team'> <img src='https://i.imgur.com/RQTKt8G.jpeg'/> </div> </div>",
             "region": "mexico",
             "serverUrl": "wss://dxb-a.wormate.io:32703/wormy",
             "status": 1
