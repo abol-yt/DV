@@ -125,9 +125,8 @@ var loadJoy = function () {
     removeJoy = function () {
         joystick && joystick.destroy()
     },
-    setJoystickConig = function (_0x9f75xd) {
-        Z.locals.joystick || = {}, Z.locals.joystick[_0x9f75xd.id.split('-')[1]] = _0x9f75xd.checked === undefined ? _0x9f75xd.value : _0x9f75xd.checked;
-        Z.saveLocal()
+     setJoystickConig = function (_0x9f75xd) {
+       Z.locals.joystick = Z.locals.joystick || {};
     },
     joystick;
 const isMobile = function () {
