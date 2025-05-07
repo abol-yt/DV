@@ -1,16 +1,16 @@
    @import url("https://haylamday.com/css/font.css");
-   body{ font-family: vuonghiep;
+   body{
+    font-family: vuonghiep;
     font-size: 16px;
-    border: solid 4px #fd0dab;
-    
+    border: solid 4px #000000;
     background-repeat: no-repeat;
     background-color: #e0e3bf !important;
-        max-width: 1150px;margin: auto;
-
+    max-width: 1150px;
+    margin: auto;
 }
 #toan-trang {background:#dae0e1;}
 .bg-danger {
-    background-color: #dc35c0 !important;
+    background-color: #d39034 !important;
 }
 @media (min-width: 992px) {
     .navbar-expand-lg {
@@ -34,7 +34,7 @@ label.btn {
 }
 .btn-primary {
     color: #fff;
-    background-color: #fd0dab;
+    background-color: #d39034;
     border-color: #0d6efd;
 }
 .carbonads {
