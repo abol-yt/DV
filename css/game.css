@@ -547,7 +547,7 @@ body {
 }
 
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-left .description-text * {
-    font-size: 9px;
+    /* font-size: 9px; */
 }
 
 img {}
