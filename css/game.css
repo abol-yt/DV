@@ -6,7 +6,7 @@
    font-family: 'HelveticaNeueLT', sans-serif;
 }
 
-.servers-container {margin-top: 26px;}
+.servers-container {border-bottom: -3px solid white;margin-top: 12px;}
 
 .img-team img {
     border-radius: 5px;
@@ -221,6 +221,10 @@ body {
     right: 0;
     top: 0;
     width: 100%;
+    https: //imgur.com/hgq0fKD;
+    background: url(https://i.imgur.com/Njd8FWi.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #game-wrap #game-cont #social-buttons {
@@ -547,7 +551,7 @@ body {
 }
 
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-left .description-text * {
-    /* font-size: 9px; */
+    font-size: 17px;
 }
 
 img {}
@@ -4416,7 +4420,7 @@ button:hover {
     font-size: 16px;
     font-weight: 700;
     height: 35px;
-    margin-top: 2px;
+    margin-top: 7px;
     width: 100%;
 }
 
@@ -4846,12 +4850,12 @@ div#kich-hoat {
 }
 
 .gachngang {
-    border-bottom: solid 1px #000;
-    margin-top: -15px;
+    /* border-bottom: solid 1px #000; */
+    /* margin-top: -15px; */
 }
 
 .gachngang {
-    border-bottom: solid 2px #ab0dc7;
+    /* border-bottom: solid 2px #ab0dc7; */
 }
 
 .container {
