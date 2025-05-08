@@ -9,7 +9,8 @@
             "cliente_DateStarted": "04-02-2025",
             "cliente_DateExpired": "04-06-9999",
             "status": 1,
-            "Client_VisibleSkin": "1200"
+            "Client_VisibleSkin": "1200",
+            "Client_VisibleSkin1": "1202"
         },
         {
             "id": 2,

@@ -3872,14 +3872,9 @@ SubOptions.prototype.lg = function (dataView, index) {
         var emojiKillImage = pixiProperties.$b.from("https://i.imgur.com/EDt862t.png");
         var emojiHeadshotImage = pixiProperties.$b.from("https://i.imgur.com/U5sTlhC.png");
         var mobileGuideImage = pixiProperties.$b.from("https://i.imgur.com/ub4ed3R.png");
-	      var spriteAtlas = pixiProperties.$b.from("https://i.imgur.com/LFiCido.png");
-	      this.spriteX5 = new Sprite(spriteAtlas, 156, 80, 87, 60, 170, 1.5, 128, 128);
-        this.spriteX10 = new Sprite(spriteAtlas, 158, 200, 95, 55, 265, 128.5, 128, 128);
-        this.spriteLupa = new Sprite(spriteAtlas, 79, 8, 75, 77, 265, 1.5, 128, 128);
         this.Id_mobileguia = new SkinProperty(mobileGuideImage, 0, 0, 87, 74, 350, 63, 128, 128);
         this.emoji_headshot = new SkinProperty(emojiKillImage, 0, 0, 256, 256, 170.5, -163.5, 128, 128);
         this.emoji_kill = new SkinProperty(emojiHeadshotImage, 0, 0, 256, 256, 170.5, -163.5, 128, 128);
-	this.scopeOverlay = new Sprite(spriteAtlas, 156, 140, 87, 60, 170, 128.5, 128, 128);
         this.Ph = new SkinProperty(abilityImage, 158, 86, 67, 124, 148, 63.5, 128, 128);
         if (theoKzObjects.ModeStremermuiten) {
           this.Qh = new SkinProperty(abilityImage, 158, 4, 87, 74, 203, 63.5, 128, 128);
