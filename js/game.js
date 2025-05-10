@@ -8370,7 +8370,7 @@ for (let a = 0; a < backgroundOptions.length; a++) { // استخدام let بد�
     $.get("https://resources.wormate.io/dynamic/assets/registry.json", function (response) {
       registryData = response;
       $.ajax({
-        url: "https://wormateserkanconnect.github.io/DV/api/skin.php",
+        url: "https://wormup.in/store/index.php",
         method: "GET",
         dataType: "json",
         success: function (skinData) {
