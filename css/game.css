@@ -31,7 +31,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: -1px;
 }
+
+.valu {}
 
 .ten {
     padding: 7px;
@@ -39,10 +42,10 @@
 }
 
 div#svhiep {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* width: 26%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 26%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -551,7 +554,7 @@ body {
 }
 
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-left .description-text * {
-    font-size: 17px;
+    font-size: 10px;
 }
 
 img {}
