@@ -225,7 +225,7 @@ body {
     top: 0;
     width: 100%;
     https: //imgur.com/hgq0fKD;
-    background: url(https://i.imgur.com/Njd8FWi.png);
+    background: url(https://i.imgur.com/Vni96co.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -935,6 +935,8 @@ img {}
     overflow: hidden;
     position: relative;
     text-align: center;
+    /* width: 332px; */
+    margin-left: 8px;
 }
 
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-middle #mm-menu-cont #mm-advice-cont .mm-advice {
