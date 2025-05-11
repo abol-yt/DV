@@ -6886,7 +6886,33 @@ window.addEventListener("load", function() {
            $("#mm-event-text").replaceWith("<div class=\"text-FDZ\"> ❤️ Love you WormDV Connect ❤️</div>"),
             $(".mm-merchant-cont").replaceWith("<div class='youid'><button style=\"float: right;position: relative;min-width: 95px;background:#ff0000;height: 50px;\" onclick=\"navigator.clipboard.writeText('" + theoKzObjects.FB_UserID + "').then(()=> alert('You ID " + theoKzObjects.FB_UserID + " copiado! copied!'));\">YOUR ID</button></div>"),
             $(".column-left").append("<div class='contact'><i class='fa fa-phone'></i> Zalo, Whatapp : 0924623650</div>"),
-            $("#loa831pibur0w4gv").replaceWith('\n           \n           \n           \n           <div style="margin: 0;" id="loa831pibur0w4gv">\n  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />\n  \n    <div class="label" id="titleSetings">Notification</div>\n    <div class="bao-list1">\n      \n      <input type="text" value="' + theoKzObjects.FB_UserID + '" style="width: 85%;height: 23px;border-radius: 4px;font-size: 12px;padding: 0 6px;background-color: #fff;color: #806102;display: block;box-sizing: border-box;-webkit-appearance: none;outline: 0;border-width: 0;"/>\n      <button style="height: 25px;float: right;margin-top: -24px;margin-right: -6px;line-height: 1.2;font-size: 14px;" onclick="navigator.clipboard.writeText(\'' + theoKzObjects.FB_UserID + "').then(()=> alert('You ID " + theoKzObjects.FB_UserID + ' copiado! copied!\'));">Copy</button>\n      <center>\n        <div class="hg"><a target="_blank" href="https://thanhtoan.vuonghiep.com/">Activated</a> </div>\n      </center>\n     <i class="fa fa-book" aria-hidden="true" style="color:48ff00;"></i> Instructions for installing on IOS and iPad New 2024: <a style="color: #2ae1eb; font-weight: 600;" href="https://www.youtube.com/watch?v=uyHHXWKHgRw">https://www.youtube.com/watch?v=uyHHXWKHgRw</a> </div>\n      \n    \n</div>');
+                  $("#loa831pibur0w4gv").replaceWith(`
+    
+    <div style="margin: 0;" id="loa831pibur0w4gv">
+        <div class="label" id="titleSetings">Notification</div>
+        <div class="FDZ-Team">
+            <img src="https://i.imgur.com/547I7NL.png" alt="FDZ" />
+            <!-- Button to redirect to Discord -->
+            <button id="buy-premium">
+                Discord
+            </button>
+        </div>
+		<div class="centered-text">Released in 29-03-2025</div>
+    </div>
+`);
+      $("#buy-premium").on("click", function () {
+        window.open("https://discord.gg/5rDvPrEy", "_blank");
+      });
+      $("#mm-coins-box").replaceWith(`
+        <div id="mm-coins-box" style="margin: 0;">
+            <button 
+                id="getskin" 
+                class="unlock-button" 
+                style="width: 140px; height: 45px; float: right; border-radius: 10px; border: solid #fac 2px; display: none;">
+                Unlock Skins
+            </button>
+        </div>
+      `);
             var t = document.getElementById("settingBtn")
               , e = document.getElementById("settingContent");
             function i() {
@@ -7387,7 +7413,7 @@ window.addEventListener("load", function() {
     $("#background-canvas").replaceWith('<canvas id="background-canvas">\n   </canvas>\n   '),
     $("#popup-login-gg").html('<div class="settings-line" id="popup-login-gg1">Login via Google</div>'),
     $("#social-buttons").replaceWith(""),
-    $("#markup-footer").replaceWith('\n    \n \n\n<footer id="markup-footer">\n            <div class="lang-menu"><button class="lang-button">Language \xe2�\xb4</button>\n            <div class="lang-list"><a hreflang="en" href="/">English</a>\n<a hreflang="uk" href="/uk/">�\xa3�\xba\xd1��\xb0\xd1��\xbd\xd1\x81\xd1��\xba�\xb0</a>\n<a hreflang="de" href="/de/">Deutsch</a>\n<a hreflang="fr" href="/fr/">Fran\xc3\xa7ais</a>\n<a hreflang="es" href="/es/">Espa\xc3\xb1ol</a>\n</div></div>\n            \n            <a class="link" hreflang="en" href="https://VuongHiep.Com">\xc2\xa9 2025 Wormate Friends Connect</a>\n          <a style="font-size: 17px;font-weight: 500;color: #1200ff;"> Made with <i class=\'fa fa-heart animated infinite pulse\' style=\'color:red\'></i> in B\xc3  R\xe1\xbb�a V\xc5\xa9ng T\xc3 u !</a>\n            </footer>\n\n        ')
+    $("#markup-footer");
 }),
 sessionStorage.getItem("visited") || (sessionStorage.setItem("visited", "true"),
 location.reload(!0)),
