@@ -2382,7 +2382,7 @@ window.addEventListener("load", function() {
                         i.preload = "auto",
                         i.play()
                     }
-                    var n = e(_0x13fb67("index.game.floating.headshot") + "\xe2� \xef\xb8\x8f", !0);
+                    var n = e(_0x13fb67("index.game.floating.headshot") + "☠", !0);
                     this.addChild(n),
                     this.Pe.push(n),
                     n && (theoKzObjects.emoji_headshot = !0,
@@ -2390,7 +2390,7 @@ window.addEventListener("load", function() {
                         theoKzObjects.emoji_headshot = !1
                     }, 3e3))
                 } else {
-                    var n = e(_0x13fb67("index.game.floating.wellDone") + "�\xaa", !1);
+                    var n = e(_0x13fb67("index.game.floating.wellDone") + "⚡", !1);
                     this.addChild(n),
                     this.Pe.push(n),
                     n && (theoKzObjects.emoji_kill = !0,
