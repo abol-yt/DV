@@ -7550,7 +7550,7 @@ $(function () {
     <div style="display: grid !important; grid-template-columns: 1fr 1fr; gap: 8.5px;">
         <input type="button" value="F.SCREEN" class="fullscreen_button">
         <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
-        <input type="button" value="SkinLab" onclick="window.location.href='https://skinlab.haylamday.com/'" class="fullscreen_contact">
+        <input type="button" value="SkinLab" onclick="window.location.href='https://wormateserkanconnect.github.io/DV/skinlab/index.html/'" class="fullscreen_contact">
     </div>
 `);
       $(document).ready(function () {
@@ -7872,7 +7872,7 @@ $("#mm-store").after(`
             </div>
 <div class="settings-lineZoom">
     <span class="settings-labelZoom">تصنيع السكنات  :</span>
-    <a href="https://skinlab.haylamday.com/" target="_blank">
+    <a href="https://wormateserkanconnect.github.io/DV/skinlab/index.html/" target="_blank">
         <i class="fa-solid fa-link red-icon"></i>
     </a>
 </div>
