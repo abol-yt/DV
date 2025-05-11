@@ -355,6 +355,11 @@ body {
     color: #000;
 }
 
+.contact {
+    font-size: 0px;
+    color: transparent;
+}
+
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-top {
     box-sizing: border-box;
     height: 70px;
