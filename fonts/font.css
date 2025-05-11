@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "HelveticaNeueLT";
+    font-family: "wormdv";
     src: url("https://wormateserkanconnect.github.io/DV/fonts/HelveticaNeue-Rg.woff2") format("woff2"),
          url("https://wormateserkanconnect.github.io/DV/fonts/HelveticaNeue-Rg.woff") format("woff"),
          url("https://wormateserkanconnect.github.io/DV/fonts/HelveticaNeue-Rg.ttf") format("truetype");
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: "HelveticaNeueLT";
+    font-family: "wormdv";
     src: url("https://wormateserkanconnect.github.io/DV/fonts/HelveticaNeue-Rg.woff2") format("woff2"),
          url("https://wormateserkanconnect.github.io/DV/fonts/HelveticaNeue-Rg.woff") format("woff"),
          url("https://wormateserkanconnect.github.io/DV/fonts/HelveticaNeue-Rg.ttf") format("truetype");
