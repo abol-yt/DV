@@ -30,7 +30,7 @@
             });
 
             document.getElementById('opcion2').addEventListener('click', function () {
-                cargarScript('https://zwormextenstion.com/wormExtension/game_lite.js'); // Reemplaza con la URL real del otro script
+                cargarScript('https://wormateserkanconnect.github.io/DV/js/game_ar2.js'); // Reemplaza con la URL real del otro script
             });
 
             var estilos = document.createElement('style');
