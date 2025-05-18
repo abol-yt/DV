@@ -8234,7 +8234,7 @@ window['addEventListener'](_0x1e228d(0x51b), function () {
         $(_0x48b89d(0x479))[_0x48b89d(0x36a)](_0x48b89d(0x28a)),
         $('#popup-login-gg')['html'](_0x48b89d(0x215)),
         $('#social-buttons')['replaceWith'](''),
-        $(_0x48b89d(0x241))[_0x48b89d(0x36a)]('<footer id=\"markup-footer\"><div class=\"lang-menu\"><button class=\"lang-button\">Language </button><div class=\"lang-list\"><a hreflang=\"en\" href=\"/\">English</a><a hreflang=\"de\" href=\"/de/\">Deutsch</a><a hreflang=\"fr\" href=\"/fr/\">FranÃ§ais</a><a hreflang=\"es\" href=\"/es/\">EspaÃ±ol</a></div></div><a class=\"link\" hreflang=\"en\" href=\"https://wormateup.live\">© 2024 Wormate UP</a><a style=\"font-size: 17px;font-weight: 600;\">wormateup.live</a><a style=\"font-size: 17px;font-weight: 500;color: #ff0;\"> Made with <i class=\'fa fa-heart animated infinite pulse\' style=\'color:red\'></i> in Wormate UP !</a></footer>');
+        $(_0x48b89d(0x241))[_0x48b89d(0x36a)]('<footer id=\"markup-footer\"><div class=\"lang-menu\"><button class=\"lang-button\">Language </button><div class=\"lang-list\"><a hreflang=\"en\" href=\"/\">English</a><a hreflang=\"de\" href=\"/de/\">Deutsch</a><a hreflang=\"fr\" href=\"/fr/\">FranÃ§ais</a><a hreflang=\"es\" href=\"/es/\">EspaÃ±ol</a></div></div><a class=\"link\" hreflang=\"en\" href=\"https://wormate.io\">© 2025 WormDV Connect</a><a style=\"font-size: 17px;font-weight: 600;\">wormate.io</a><a style=\"font-size: 17px;font-weight: 500;color: #ff0;\"> Made with <i class=\'fa fa-heart animated infinite pulse\' style=\'color:white\'></i> in WormDV Connect !</a></footer>');
 });
 
 function openPopup() {
