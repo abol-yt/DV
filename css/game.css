@@ -5010,7 +5010,7 @@ input[type="color"]::-moz-color-swatch {
 }
 
 #titleSetings {
-  font-size: 1.5em; /* Aumenta el tamaÃ±o del texto */
+  font-size: 23px; /* Aumenta el tamaÃ±o del texto */
   padding: 8px 12px; /* Aumenta el espacio interior */
   border-radius: 8px; /* Aumenta el radio del borde para hacerlo mÃ¡s suave */
   text-align: center; /* Centra el texto horizontalmente */
